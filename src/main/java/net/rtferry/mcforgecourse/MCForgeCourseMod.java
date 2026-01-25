@@ -22,7 +22,7 @@ public class MCForgeCourseMod
     public static final String MOD_ID = "mcforgecourse";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-
+    // Very important comment
     public MCForgeCourseMod(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
