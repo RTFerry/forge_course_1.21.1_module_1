@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mcforgecourse:block/azurite_block"
+    }
+  }
+}
