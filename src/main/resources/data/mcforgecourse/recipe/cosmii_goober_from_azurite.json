@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mcforgecourse:azurite",
+      "count": 4
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcforgecourse:cosmii_goober"
+  }
+}
