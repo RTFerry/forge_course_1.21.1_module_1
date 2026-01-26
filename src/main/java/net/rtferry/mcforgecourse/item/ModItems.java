@@ -7,6 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
 import net.rtferry.mcforgecourse.item.custom.ChainsawItem;
+import net.rtferry.mcforgecourse.item.custom.FuelItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -20,6 +21,8 @@ public class ModItems {
             () -> new ChainsawItem(new Item.Properties().durability(100)));
     public static final RegistryObject<Item> ONION = ITEMS.register("onion",
             () -> new Item(new Item.Properties().food(ModFoodProperties.ONION)));
+    public static final RegistryObject<Item> AURORA_ASHES = ITEMS.register("aurora_ashes",
+            () -> new FuelItem(new Item.Properties(),1000));
 
     public static final RegistryObject<Item> COSMII_GOOBER = ITEMS.register("cosmii_goober",
             () -> new Item(new Item.Properties().food(ModFoodProperties.COSMII_GOOBER)));
