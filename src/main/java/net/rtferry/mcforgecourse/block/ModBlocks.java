@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
+import net.rtferry.mcforgecourse.block.Custom.MagicBlock;
 import net.rtferry.mcforgecourse.item.ModItems;
 
 import java.util.function.Supplier;
@@ -28,6 +29,9 @@ public class ModBlocks {
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> COSMII_BLOCK = registerBlock("cosmii_block",
             () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().lightLevel(ToIntFunction -> 15)));
+    public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops()));
 
     // Experience blocks:

@@ -29,6 +29,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.azurite_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.AZURITE_BLOCK.get());
+                        output.accept(ModBlocks.MAGIC_BLOCK.get());
 
                         output.accept(ModBlocks.AZURITE_ORE.get());
                         output.accept(ModBlocks.AZURITE_DEEPSLATE_ORE.get());
