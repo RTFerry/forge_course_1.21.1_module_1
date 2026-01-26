@@ -16,6 +16,12 @@
   "block.mcforgecourse.azurite_end_ore": "End Azurite Ore",
   "block.mcforgecourse.cosmii_block": "Block of Cosmii",
 
+  "tooltip.mcforgecourse.chainsaw.tooltip.shift": "Hold §n§4Shift§r for more Info",
+  "tooltip.mcforgecourse.chainsaw.tooltip.1": "This Chainsaw will cut down trees fast!",
+  "tooltip.mcforgecourse.chainsaw.tooltip.2": "§lHold Right-Click to chop Wood§r",
+  "tooltip.mcforgecourse.magic_block.tooltip.shift": "Hold §n§4Shift§r for more Info",
+  "tooltip.mcforgecourse.magic_block.tooltip.1": "Throwing §n§9Azurite§r on top of this block will turn it into a §n§bDiamond§r",
+
 
   "creativetab.azurite_items": "Azurite Items",
   "creativetab.azurite_blocks": "Azurite Blocks",
