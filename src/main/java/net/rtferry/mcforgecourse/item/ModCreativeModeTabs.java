@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.AZURITE.get());
                         output.accept(ModItems.RAW_AZURITE.get());
                         output.accept(ModItems.CHAINSAW.get());
+                        output.accept(ModItems.ONION.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AZURITE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("azurite_blocks_tab",
@@ -43,6 +44,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.COSMII_GOOBER.get());
                         output.accept(ModBlocks.COSMII_BLOCK.get());
+                        output.accept(ModItems.VENISON.get());
                     }).build());
 
 

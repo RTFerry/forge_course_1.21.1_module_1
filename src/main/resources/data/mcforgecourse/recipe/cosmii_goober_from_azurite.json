@@ -1,14 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "ingredients": [
-    {
-      "item": "mcforgecourse:azurite",
-      "count": 4
+  "key": {
+    "A" : {
+      "item": "mcforgecourse:azurite"
     }
+  },
+  "pattern": [
+    "AA ",
+    "AA ",
+    "   "
   ],
   "result": {
-    "count": 1,
-    "id": "mcforgecourse:cosmii_goober"
+    "count": 4,
+    "id": "mcforgecourse:magic_block"
   }
 }

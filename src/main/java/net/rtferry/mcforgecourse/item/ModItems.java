@@ -18,10 +18,13 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CHAINSAW = ITEMS.register("chainsaw",
             () -> new ChainsawItem(new Item.Properties().durability(100)));
-
+    public static final RegistryObject<Item> ONION = ITEMS.register("onion",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ONION)));
 
     public static final RegistryObject<Item> COSMII_GOOBER = ITEMS.register("cosmii_goober",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.COSMII_GOOBER)));
+    public static final RegistryObject<Item> VENISON = ITEMS.register("venison",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.VENISON)));
 
     public static void register(IEventBus eventBus) {
            ITEMS.register(eventBus);
