@@ -3,9 +3,7 @@ package net.rtferry.mcforgecourse.block;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -44,6 +42,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> AZURITE_END_ORE = registerBlock("azurite_end_ore",
             () -> new DropExperienceBlock(UniformInt.of(5,10),
                     (BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops())));
+
+    // Stairs:
+    public static final RegistryObject<Block> AZURITE_STAIRS = registerBlock("azurite_stairs",
+            () -> new StairBlock(ModBlocks.AZURITE_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    // Slabs:
+    public static final RegistryObject<Block> AZURITE_SLAB = registerBlock("azurite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

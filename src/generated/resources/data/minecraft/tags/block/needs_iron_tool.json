@@ -1,0 +1,12 @@
+{
+  "values": [
+    "mcforgecourse:azurite_block",
+    "mcforgecourse:azurite_ore",
+    "mcforgecourse:azurite_nether_ore",
+    "mcforgecourse:azurite_end_ore",
+    "mcforgecourse:magic_block",
+    "mcforgecourse:azurite_deepslate_ore",
+    "mcforgecourse:azurite_stairs",
+    "mcforgecourse:azurite_slab"
+  ]
+}

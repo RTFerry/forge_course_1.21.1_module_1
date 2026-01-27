@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "mcforgecourse:block/azurite_block",
+    "side": "mcforgecourse:block/azurite_block",
+    "top": "mcforgecourse:block/azurite_block"
+  }
+}

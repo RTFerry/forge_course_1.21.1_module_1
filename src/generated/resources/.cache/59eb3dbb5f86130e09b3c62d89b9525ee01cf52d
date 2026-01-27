@@ -1,0 +1,9 @@
+// 1.21.1	2026-01-27T21:57:16.9395501	Loot Tables
+0d7722be5f9503749bd04fb646c110a4e68a6a7f data/mcforgecourse/loot_table/blocks/azurite_block.json
+7c9ff4c8dbf2fba135c6b6e4b24c6c5a3a28fce7 data/mcforgecourse/loot_table/blocks/azurite_deepslate_ore.json
+1721c11494c4a30cdf549a767b1ba3e22c01c615 data/mcforgecourse/loot_table/blocks/azurite_end_ore.json
+496bc372bf2672587ab9e321a8c2a2be4c79d274 data/mcforgecourse/loot_table/blocks/azurite_nether_ore.json
+07e97351a52c7ac65fe395fac14aef603047eaec data/mcforgecourse/loot_table/blocks/azurite_ore.json
+edceb644ec541e5efd0cf2ae8ef27f59552a17b9 data/mcforgecourse/loot_table/blocks/azurite_slab.json
+e63f36af5f411ce1304a4fbac4e0911e8bed207d data/mcforgecourse/loot_table/blocks/azurite_stairs.json
+3038237ed11d44ae3a11c141be1ae3dbabb66159 data/mcforgecourse/loot_table/blocks/magic_block.json

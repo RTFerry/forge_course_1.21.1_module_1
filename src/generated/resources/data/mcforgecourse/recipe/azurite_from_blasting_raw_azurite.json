@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 125,
+  "experience": 0.25,
+  "group": "azurite",
+  "ingredient": {
+    "item": "mcforgecourse:raw_azurite"
+  },
+  "result": {
+    "id": "mcforgecourse:azurite"
+  }
+}
