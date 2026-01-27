@@ -6,6 +6,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -51,6 +52,16 @@ public class ModBlocks {
     // Slabs:
     public static final RegistryObject<Block> AZURITE_SLAB = registerBlock("azurite_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    // Button:
+    public static final RegistryObject<Block> AZURITE_BUTTON = registerBlock("azurite_button",
+            () -> new ButtonBlock(BlockSetType.IRON,10,BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    // Pressure Plate:
+    public static final RegistryObject<Block> AZURITE_PRESSURE_PLATE = registerBlock("azurite_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON,BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {

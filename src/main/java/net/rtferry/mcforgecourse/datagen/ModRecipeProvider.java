@@ -40,9 +40,15 @@ public class ModRecipeProvider extends RecipeProvider {
         oreSmelting(pRecipeOutput, AZURITE_SMELTABLES, RecipeCategory.MISC, ModItems.AZURITE.get(), 0.25f,200,"azurite");
         oreBlasting(pRecipeOutput, AZURITE_SMELTABLES, RecipeCategory.MISC, ModItems.AZURITE.get(), 0.25f,125,"azurite");
 
-        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AZURITE_SLAB.get(), ModItems.AZURITE.get());
-        stairBuilder(ModBlocks.AZURITE_STAIRS.get(), Ingredient.of(ModItems.AZURITE.get())).group("azurite")
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AZURITE_SLAB.get(), ModBlocks.AZURITE_BLOCK.get());
+
+        stairBuilder(ModBlocks.AZURITE_STAIRS.get(), Ingredient.of(ModBlocks.AZURITE_BLOCK.get())).group("azurite")
+                .unlockedBy("has_azurite_block", has(ModBlocks.AZURITE_BLOCK.get())).save(pRecipeOutput);
+
+        buttonBuilder(ModBlocks.AZURITE_BUTTON.get(), Ingredient.of(ModItems.AZURITE.get())).group("azurite")
                 .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
+        pressurePlate(pRecipeOutput, ModBlocks.AZURITE_PRESSURE_PLATE.get(), ModItems.AZURITE.get());
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
