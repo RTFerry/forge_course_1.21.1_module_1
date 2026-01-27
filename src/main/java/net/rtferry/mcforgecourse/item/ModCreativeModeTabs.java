@@ -39,16 +39,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.AZURITE_END_ORE.get());
                     }).build());
 
-    public static final RegistryObject<CreativeModeTab> COSMII_TAB = CREATIVE_MODE_TABS.register("cosmii_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.COSMII_GOOBER.get())).withTabsBefore(AZURITE_BLOCKS_TAB.getId())
-                    .title(Component.translatable("creativetab.cosmii"))
-                    .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.COSMII_GOOBER.get());
-                        output.accept(ModBlocks.COSMII_BLOCK.get());
-                        output.accept(ModItems.VENISON.get());
-                    }).build());
-
-
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

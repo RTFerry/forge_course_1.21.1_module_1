@@ -24,11 +24,6 @@ public class ModItems {
     public static final RegistryObject<Item> AURORA_ASHES = ITEMS.register("aurora_ashes",
             () -> new FuelItem(new Item.Properties(),1000));
 
-    public static final RegistryObject<Item> COSMII_GOOBER = ITEMS.register("cosmii_goober",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.COSMII_GOOBER)));
-    public static final RegistryObject<Item> VENISON = ITEMS.register("venison",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.VENISON)));
-
     public static void register(IEventBus eventBus) {
            ITEMS.register(eventBus);
     }

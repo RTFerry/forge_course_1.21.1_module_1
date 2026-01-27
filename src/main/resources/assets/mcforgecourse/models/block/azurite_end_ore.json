@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "mcforgecourse:block/azurite_end_ore"
-  }
-}

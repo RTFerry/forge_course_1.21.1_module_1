@@ -27,9 +27,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> AZURITE_BLOCK = registerBlock("azurite_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> COSMII_BLOCK = registerBlock("cosmii_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops().lightLevel(ToIntFunction -> 15)));
     public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops()));

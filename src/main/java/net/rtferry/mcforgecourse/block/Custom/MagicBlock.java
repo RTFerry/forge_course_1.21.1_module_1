@@ -19,6 +19,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.rtferry.mcforgecourse.item.ModItems;
+import net.rtferry.mcforgecourse.util.ModTags;
 
 import java.util.List;
 
@@ -45,7 +46,7 @@ public class MagicBlock extends Block {
     }
 
     private boolean isValidItem(ItemStack item) {
-        return item.getItem() == ModItems.AZURITE.get();
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
     @Override

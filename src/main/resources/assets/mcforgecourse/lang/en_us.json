@@ -1,10 +1,8 @@
 {
   "item.mcforgecourse.azurite": "Azurite",
   "item.mcforgecourse.raw_azurite": "Raw Azurite",
-  "item.mcforgecourse.cosmii_goober": "Cosmii Goober",
   "item.mcforgecourse.chainsaw": "Chainsaw",
   "item.mcforgecourse.onion": "Onion",
-  "item.mcforgecourse.venison": "Venison",
   "item.mcforgecourse.aurora_ashes": "Aurora Ashes",
 
 
@@ -14,7 +12,6 @@
   "block.mcforgecourse.azurite_deepslate_ore": "Deepslate Azurite Ore",
   "block.mcforgecourse.azurite_nether_ore": "Nether Azurite Ore",
   "block.mcforgecourse.azurite_end_ore": "End Azurite Ore",
-  "block.mcforgecourse.cosmii_block": "Block of Cosmii",
 
   "tooltip.mcforgecourse.chainsaw.tooltip.shift": "Hold §n§4Shift§r for more Info",
   "tooltip.mcforgecourse.chainsaw.tooltip.1": "This Chainsaw will cut down trees fast!",
@@ -24,6 +21,5 @@
 
 
   "creativetab.azurite_items": "Azurite Items",
-  "creativetab.azurite_blocks": "Azurite Blocks",
-  "creativetab.cosmii": "Cosmii"
+  "creativetab.azurite_blocks": "Azurite Blocks"
 }
