@@ -3,8 +3,10 @@ package net.rtferry.mcforgecourse.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
 import net.rtferry.mcforgecourse.block.ModBlocks;
 import org.jetbrains.annotations.Nullable;
@@ -28,7 +30,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.AZURITE_STAIRS.get())
                 .add(ModBlocks.AZURITE_SLAB.get())
                 .add(ModBlocks.AZURITE_PRESSURE_PLATE.get())
-                .add(ModBlocks.AZURITE_BUTTON.get());
+                .add(ModBlocks.AZURITE_BUTTON.get())
+                .add(ModBlocks.AZURITE_FENCE.get())
+                .add(ModBlocks.AZURITE_FENCE_GATE.get())
+                .add(ModBlocks.AZURITE_WALL.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.AZURITE_BLOCK.get())
@@ -40,6 +45,19 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.AZURITE_STAIRS.get())
                 .add(ModBlocks.AZURITE_SLAB.get())
                 .add(ModBlocks.AZURITE_PRESSURE_PLATE.get())
-                .add(ModBlocks.AZURITE_BUTTON.get());
+                .add(ModBlocks.AZURITE_BUTTON.get())
+                .add(ModBlocks.AZURITE_FENCE.get())
+                .add(ModBlocks.AZURITE_FENCE_GATE.get())
+                .add(ModBlocks.AZURITE_WALL.get());
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.AZURITE_FENCE.get());
+
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.AZURITE_WALL.get());
+
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.AZURITE_FENCE_GATE.get());
+
     }
 }

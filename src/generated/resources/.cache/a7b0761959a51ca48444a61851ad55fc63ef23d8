@@ -1,3 +1,6 @@
-// 1.21.1	2026-01-27T22:22:33.2972295	Tags for minecraft:block mod id mcforgecourse
-7e873dcffa7deb565e176a9dbe146ab572902b77 data/minecraft/tags/block/mineable/pickaxe.json
-7e873dcffa7deb565e176a9dbe146ab572902b77 data/minecraft/tags/block/needs_iron_tool.json
+// 1.21.1	2026-01-28T16:13:13.8518793	Tags for minecraft:block mod id mcforgecourse
+f5e7a9e6381a096867e1eef69244e90c0678c192 data/minecraft/tags/block/fences.json
+6905bd91d2440b7e0674f45a89d1fea55ace84d5 data/minecraft/tags/block/fence_gates.json
+c3d28b23a813c38a217ff8a1871fc3e95d5c47ec data/minecraft/tags/block/mineable/pickaxe.json
+c3d28b23a813c38a217ff8a1871fc3e95d5c47ec data/minecraft/tags/block/needs_iron_tool.json
+65fa934058fc369b6c0b6d668f3827fd1dc23299 data/minecraft/tags/block/walls.json

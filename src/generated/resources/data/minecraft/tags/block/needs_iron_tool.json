@@ -9,6 +9,9 @@
     "mcforgecourse:azurite_stairs",
     "mcforgecourse:azurite_slab",
     "mcforgecourse:azurite_pressure_plate",
-    "mcforgecourse:azurite_button"
+    "mcforgecourse:azurite_button",
+    "mcforgecourse:azurite_fence",
+    "mcforgecourse:azurite_fence_gate",
+    "mcforgecourse:azurite_wall"
   ]
 }

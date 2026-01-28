@@ -35,6 +35,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.AZURITE_STAIRS);
         blockItem(ModBlocks.AZURITE_SLAB);
         blockItem(ModBlocks.AZURITE_PRESSURE_PLATE);
+        blockItem((ModBlocks.AZURITE_FENCE_GATE));
+
+        // Fence and Wall:
+        fenceBlock(((FenceBlock) ModBlocks.AZURITE_FENCE.get()), blockTexture(ModBlocks.AZURITE_BLOCK.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.AZURITE_FENCE_GATE.get()), blockTexture(ModBlocks.AZURITE_BLOCK.get()));
+        wallBlock(((WallBlock) ModBlocks.AZURITE_WALL.get()), blockTexture(ModBlocks.AZURITE_BLOCK.get()));
 
         // Button:
         buttonBlock(((ButtonBlock) ModBlocks.AZURITE_BUTTON.get()), blockTexture(ModBlocks.AZURITE_BLOCK.get()));
