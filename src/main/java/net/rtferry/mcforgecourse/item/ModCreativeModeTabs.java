@@ -38,6 +38,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.AZURITE_FENCE.get());
                         output.accept(ModBlocks.AZURITE_FENCE_GATE.get());
                         output.accept(ModBlocks.AZURITE_WALL.get());
+                        output.accept(ModBlocks.AZURITE_DOOR.get());
+                        output.accept(ModBlocks.AZURITE_TRAPDOOR.get());
                         output.accept(ModBlocks.MAGIC_BLOCK.get());
 
                         output.accept(ModBlocks.AZURITE_ORE.get());

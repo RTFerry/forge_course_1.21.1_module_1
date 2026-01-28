@@ -33,7 +33,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.AZURITE_BUTTON.get())
                 .add(ModBlocks.AZURITE_FENCE.get())
                 .add(ModBlocks.AZURITE_FENCE_GATE.get())
-                .add(ModBlocks.AZURITE_WALL.get());
+                .add(ModBlocks.AZURITE_WALL.get())
+                .add(ModBlocks.AZURITE_DOOR.get())
+                .add(ModBlocks.AZURITE_TRAPDOOR.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.AZURITE_BLOCK.get())
@@ -48,7 +50,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.AZURITE_BUTTON.get())
                 .add(ModBlocks.AZURITE_FENCE.get())
                 .add(ModBlocks.AZURITE_FENCE_GATE.get())
-                .add(ModBlocks.AZURITE_WALL.get());
+                .add(ModBlocks.AZURITE_WALL.get())
+                .add(ModBlocks.AZURITE_DOOR.get())
+                .add(ModBlocks.AZURITE_TRAPDOOR.get());
 
         this.tag(BlockTags.FENCES)
                 .add(ModBlocks.AZURITE_FENCE.get());

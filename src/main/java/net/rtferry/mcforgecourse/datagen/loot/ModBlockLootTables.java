@@ -37,6 +37,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.AZURITE_FENCE.get());
         dropSelf(ModBlocks.AZURITE_FENCE_GATE.get());
         dropSelf(ModBlocks.AZURITE_WALL.get());
+        dropSelf(ModBlocks.AZURITE_TRAPDOOR.get());
 
         this.add(ModBlocks.AZURITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.AZURITE_ORE.get(), ModItems.RAW_AZURITE.get()));
@@ -50,6 +51,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         // Loot table for slab because if 2 slabs are on the same block then it drops 2:
         this.add(ModBlocks.AZURITE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.AZURITE_SLAB.get()));
+
+        this.add(ModBlocks.AZURITE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.AZURITE_DOOR.get()));
 
     }
 

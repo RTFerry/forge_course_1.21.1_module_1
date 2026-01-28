@@ -76,6 +76,14 @@ public class ModBlocks {
             () -> new PressurePlateBlock(BlockSetType.IRON,BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
+    // Door:
+    public static final RegistryObject<Block> AZURITE_DOOR = registerBlock("azurite_door",
+            () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).noOcclusion()));
+    public static final RegistryObject<Block> AZURITE_TRAPDOOR = registerBlock("azurite_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.IRON,BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).noOcclusion()));
+
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
