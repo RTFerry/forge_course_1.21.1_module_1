@@ -2,6 +2,7 @@ package net.rtferry.mcforgecourse.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -31,6 +32,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.AZURITE_WALL, ModBlocks.AZURITE_BLOCK);
 
         simpleBlockItem(ModBlocks.AZURITE_DOOR);
+
+        handheldItem(ModItems.AZURITE_SWORD);
+        handheldItem(ModItems.AZURITE_AXE);
+        handheldItem(ModItems.AZURITE_SHOVEL);
+        handheldItem(ModItems.AZURITE_HOE);
+        handheldItem(ModItems.AZURITE_PICKAXE);
     }
 
     public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
@@ -55,5 +62,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/generated")).texture("layer0",
                 ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID, "item/" + item.getId().getPath()));
     }
 }

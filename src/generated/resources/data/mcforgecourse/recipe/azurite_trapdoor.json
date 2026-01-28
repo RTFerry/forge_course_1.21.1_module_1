@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "azurite",
+  "key": {
+    "#": {
+      "item": "mcforgecourse:azurite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcforgecourse:azurite_trapdoor"
+  }
+}

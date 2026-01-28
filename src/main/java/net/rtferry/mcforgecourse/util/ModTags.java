@@ -10,6 +10,9 @@ import net.rtferry.mcforgecourse.MCForgeCourseMod;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_AZURITE_TOOL = createTag("needs_azurite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_AZURITE_TOOL = createTag("incorrect_for_azurite_tool");
+
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID, name));
         }
