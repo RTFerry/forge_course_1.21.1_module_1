@@ -32,7 +32,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.AZURITE_AXE.get())
                 .add(ModItems.AZURITE_SHOVEL.get())
                 .add(ModItems.AZURITE_HOE.get())
-                .add(ModItems.AZURITE_PAXEL.get());
+                .add(ModItems.AZURITE_PAXEL.get())
+                .add(ModItems.AZURITE_HAMMER.get());
 
         tag(ItemTags.SHARP_WEAPON_ENCHANTABLE)
                 .add(ModItems.AZURITE_AXE.get())
@@ -44,11 +45,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.AZURITE_SHOVEL.get())
                 .add(ModItems.AZURITE_AXE.get())
                 .add(ModItems.AZURITE_HOE.get())
-                .add(ModItems.AZURITE_PAXEL.get());
+                .add(ModItems.AZURITE_PAXEL.get())
+                .add(ModItems.AZURITE_HAMMER.get());
 
         tag(ItemTags.FIRE_ASPECT_ENCHANTABLE)
                 .add(ModItems.AZURITE_SWORD.get())
-                .add(ModItems.AZURITE_PAXEL.get());
+                .add(ModItems.AZURITE_PAXEL.get())
+                .add(ModItems.AZURITE_HAMMER.get());
 
         tag(ItemTags.DURABILITY_ENCHANTABLE)
                 .add(ModItems.AZURITE_PICKAXE.get())
@@ -56,6 +59,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.AZURITE_AXE.get())
                 .add(ModItems.AZURITE_HOE.get())
                 .add(ModItems.AZURITE_SWORD.get())
-                .add(ModItems.AZURITE_PAXEL.get());
+                .add(ModItems.AZURITE_PAXEL.get())
+                .add(ModItems.AZURITE_HAMMER.get());
     }
 }
