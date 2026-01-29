@@ -8,6 +8,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
 import net.rtferry.mcforgecourse.item.custom.ChainsawItem;
 import net.rtferry.mcforgecourse.item.custom.FuelItem;
+import net.rtferry.mcforgecourse.item.custom.PaxelItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -35,6 +36,9 @@ public class ModItems {
             () -> new ShovelItem(ModToolTiers.Azurite,new  Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.Azurite,1.5f,-3.0f))));
     public static final RegistryObject<Item> AZURITE_HOE = ITEMS.register("azurite_hoe",
             () -> new HoeItem(ModToolTiers.Azurite,new  Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.Azurite,-1.0f,-2.0f))));
+
+    public static final RegistryObject<Item> AZURITE_PAXEL = ITEMS.register("azurite_paxel",
+            () -> new PaxelItem(ModToolTiers.Azurite,new  Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.Azurite,2.0f,-2.0f))));
 
 
     public static void register(IEventBus eventBus) {

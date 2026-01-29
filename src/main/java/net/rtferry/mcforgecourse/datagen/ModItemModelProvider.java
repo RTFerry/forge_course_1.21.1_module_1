@@ -38,6 +38,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.AZURITE_SHOVEL);
         handheldItem(ModItems.AZURITE_HOE);
         handheldItem(ModItems.AZURITE_PICKAXE);
+        handheldItem(ModItems.AZURITE_PAXEL);
     }
 
     public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {

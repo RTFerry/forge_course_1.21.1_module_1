@@ -1,8 +1,8 @@
-// 1.21.1	2026-01-28T22:24:23.1057839	Tags for minecraft:item mod id mcforgecourse
+// 1.21.1	2026-01-29T13:31:52.6419068	Tags for minecraft:item mod id mcforgecourse
 1f35f62f3d45023ce10fad6d2863fac68195b776 data/mcforgecourse/tags/item/transformable_items.json
-25cdd94d246f927cfa20ad802a60ad6290e61c4f data/minecraft/tags/item/enchantable/durability.json
-e245758af252fd48fda957fe99d1dff0df06f97b data/minecraft/tags/item/enchantable/fire_aspect.json
-77017c7383fe53b2aea9fac43e0d2ff6819ec5a8 data/minecraft/tags/item/enchantable/mining.json
-d0600e70387d08fd9e08fefe1ea42e9b28c8025b data/minecraft/tags/item/enchantable/mining_loot.json
-4f4574facff61d3e690ec1134a59d895dd47a5f9 data/minecraft/tags/item/enchantable/sharp_weapon.json
+6f36ce7c3dc1b32236fb45801ee1de43e2bb99b4 data/minecraft/tags/item/enchantable/durability.json
+76af6c567e63d92fada21abec3e359df7c15baf3 data/minecraft/tags/item/enchantable/fire_aspect.json
+0442548a81cb3293572b62a7d49d2df7d47f8518 data/minecraft/tags/item/enchantable/mining.json
+fc9c9f8b575a45c6d841a4c096c9774d7450547c data/minecraft/tags/item/enchantable/mining_loot.json
+90e0043658707f87593e0e49cf3d67c8f44e45d0 data/minecraft/tags/item/enchantable/sharp_weapon.json
 e245758af252fd48fda957fe99d1dff0df06f97b data/minecraft/tags/item/enchantable/sword.json

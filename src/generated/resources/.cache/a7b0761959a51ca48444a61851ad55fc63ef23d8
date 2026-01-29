@@ -1,4 +1,5 @@
-// 1.21.1	2026-01-28T16:51:04.7145942	Tags for minecraft:block mod id mcforgecourse
+// 1.21.1	2026-01-29T13:31:52.6393882	Tags for minecraft:block mod id mcforgecourse
+82362cfbd1836db13c7e9d36c8712821e795ac55 data/mcforgecourse/tags/block/mineable/paxel.json
 f5e7a9e6381a096867e1eef69244e90c0678c192 data/minecraft/tags/block/fences.json
 6905bd91d2440b7e0674f45a89d1fea55ace84d5 data/minecraft/tags/block/fence_gates.json
 aff54e8c3525dea6eebdabb6c2b8ab9de5d450a4 data/minecraft/tags/block/mineable/pickaxe.json

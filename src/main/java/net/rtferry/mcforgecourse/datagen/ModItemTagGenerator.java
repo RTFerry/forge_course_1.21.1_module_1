@@ -31,26 +31,31 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.AZURITE_PICKAXE.get())
                 .add(ModItems.AZURITE_AXE.get())
                 .add(ModItems.AZURITE_SHOVEL.get())
-                .add(ModItems.AZURITE_HOE.get());
+                .add(ModItems.AZURITE_HOE.get())
+                .add(ModItems.AZURITE_PAXEL.get());
 
         tag(ItemTags.SHARP_WEAPON_ENCHANTABLE)
                 .add(ModItems.AZURITE_AXE.get())
-                .add(ModItems.AZURITE_SWORD.get());
+                .add(ModItems.AZURITE_SWORD.get())
+                .add(ModItems.AZURITE_PAXEL.get());
 
         tag(ItemTags.MINING_LOOT_ENCHANTABLE)
                 .add(ModItems.AZURITE_PICKAXE.get())
                 .add(ModItems.AZURITE_SHOVEL.get())
                 .add(ModItems.AZURITE_AXE.get())
-                .add(ModItems.AZURITE_HOE.get());
+                .add(ModItems.AZURITE_HOE.get())
+                .add(ModItems.AZURITE_PAXEL.get());
 
         tag(ItemTags.FIRE_ASPECT_ENCHANTABLE)
-                .add(ModItems.AZURITE_SWORD.get());
+                .add(ModItems.AZURITE_SWORD.get())
+                .add(ModItems.AZURITE_PAXEL.get());
 
         tag(ItemTags.DURABILITY_ENCHANTABLE)
                 .add(ModItems.AZURITE_PICKAXE.get())
                 .add(ModItems.AZURITE_SHOVEL.get())
                 .add(ModItems.AZURITE_AXE.get())
                 .add(ModItems.AZURITE_HOE.get())
-                .add(ModItems.AZURITE_SWORD.get());
+                .add(ModItems.AZURITE_SWORD.get())
+                .add(ModItems.AZURITE_PAXEL.get());
     }
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-28T18:58:44.3789985	Item Models: mcforgecourse
+// 1.21.1	2026-01-29T13:31:52.6424144	Item Models: mcforgecourse
 fea833285322e24e716e4c5ea7c7fbc6e38ca0c8 assets/mcforgecourse/models/item/aurora_ashes.json
 b851adeef6f5cfe6a85a7d23330fbbc36d2c1572 assets/mcforgecourse/models/item/azurite.json
 045fab7186ff68568cf28845aba7ab2b669495b6 assets/mcforgecourse/models/item/azurite_axe.json
@@ -6,6 +6,7 @@ db3f204898c92b47261574bb33b8431229f9aa23 assets/mcforgecourse/models/item/azurit
 b010fe9bf00676f35303a41637c87ba61cbfd610 assets/mcforgecourse/models/item/azurite_door.json
 17c6b9c56c5e14e71749839613bd39979f3191b9 assets/mcforgecourse/models/item/azurite_fence.json
 bf070a11c23c326c812ea62e788d99aee563201f assets/mcforgecourse/models/item/azurite_hoe.json
+ce8f9cccdd90864e2a2d454f7d8e57c8a38ea100 assets/mcforgecourse/models/item/azurite_paxel.json
 1917ed59a847303813fb370ee1cba885ec3c1f3d assets/mcforgecourse/models/item/azurite_pickaxe.json
 73cd8320834d867daedcfa695a2f2cf3421bbd2d assets/mcforgecourse/models/item/azurite_shovel.json
 6da9d0f149952eab8fe445b23d57b0a994a13e59 assets/mcforgecourse/models/item/azurite_sword.json

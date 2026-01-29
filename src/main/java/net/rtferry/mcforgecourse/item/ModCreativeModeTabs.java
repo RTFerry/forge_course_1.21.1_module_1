@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.AZURITE.get());
                         output.accept(ModItems.RAW_AZURITE.get());
                         output.accept(ModItems.CHAINSAW.get());
+                        output.accept(ModItems.AZURITE_PAXEL.get());
                         output.accept(ModItems.AZURITE_PICKAXE.get());
                         output.accept(ModItems.AZURITE_SWORD.get());
                         output.accept(ModItems.AZURITE_AXE.get());
