@@ -1,15 +1,13 @@
 package net.rtferry.mcforgecourse.item;
 
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
-import net.rtferry.mcforgecourse.item.custom.ChainsawItem;
-import net.rtferry.mcforgecourse.item.custom.FuelItem;
-import net.rtferry.mcforgecourse.item.custom.HammerItem;
-import net.rtferry.mcforgecourse.item.custom.PaxelItem;
+import net.rtferry.mcforgecourse.item.custom.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -28,7 +26,7 @@ public class ModItems {
 
     // Tools:
     public static final RegistryObject<Item> AZURITE_SWORD = ITEMS.register("azurite_sword",
-            () -> new SwordItem(ModToolTiers.Azurite,new  Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.Azurite,3,-2.4f))));
+            () -> new ModEffectSwordItem(ModToolTiers.Azurite,new  Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.Azurite,3,-2.4f)), MobEffects.LEVITATION));
     public static final RegistryObject<Item> AZURITE_AXE = ITEMS.register("azurite_axe",
             () -> new AxeItem(ModToolTiers.Azurite,new  Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.Azurite,6f,-3.2f))));
     public static final RegistryObject<Item> AZURITE_PICKAXE = ITEMS.register("azurite_pickaxe",
