@@ -26,21 +26,42 @@ public class ModItems {
 
     // Tools:
     public static final RegistryObject<Item> AZURITE_SWORD = ITEMS.register("azurite_sword",
-            () -> new ModEffectSwordItem(ModToolTiers.Azurite,new  Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.Azurite,3,-2.4f)), MobEffects.LEVITATION));
+            () -> new ModEffectSwordItem(ModToolTiers.Azurite,new  Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.Azurite,3,-2.4f)), MobEffects.LEVITATION));
     public static final RegistryObject<Item> AZURITE_AXE = ITEMS.register("azurite_axe",
-            () -> new AxeItem(ModToolTiers.Azurite,new  Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.Azurite,6f,-3.2f))));
+            () -> new AxeItem(ModToolTiers.Azurite,new  Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.Azurite,6f,-3.2f))));
     public static final RegistryObject<Item> AZURITE_PICKAXE = ITEMS.register("azurite_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.Azurite,new  Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.Azurite,1.0f,-2.8f))));
+            () -> new PickaxeItem(ModToolTiers.Azurite,new  Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.Azurite,1.0f,-2.8f))));
     public static final RegistryObject<Item> AZURITE_SHOVEL = ITEMS.register("azurite_shovel",
-            () -> new ShovelItem(ModToolTiers.Azurite,new  Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.Azurite,1.5f,-3.0f))));
+            () -> new ShovelItem(ModToolTiers.Azurite,new  Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.Azurite,1.5f,-3.0f))));
     public static final RegistryObject<Item> AZURITE_HOE = ITEMS.register("azurite_hoe",
-            () -> new HoeItem(ModToolTiers.Azurite,new  Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.Azurite,-1.0f,-2.0f))));
+            () -> new HoeItem(ModToolTiers.Azurite,new  Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.Azurite,-1.0f,-2.0f))));
 
     public static final RegistryObject<Item> AZURITE_PAXEL = ITEMS.register("azurite_paxel",
-            () -> new PaxelItem(ModToolTiers.Azurite,new  Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.Azurite,2.0f,-2.5f))));
+            () -> new PaxelItem(ModToolTiers.Azurite,new  Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.Azurite,2.0f,-2.5f))));
 
     public static final RegistryObject<Item> AZURITE_HAMMER = ITEMS.register("azurite_hammer",
-            () -> new HammerItem(ModToolTiers.Azurite,new  Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.Azurite,5.0f,-3f))));
+            () -> new HammerItem(ModToolTiers.Azurite,new  Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.Azurite,5.0f,-3f))));
+
+    // Armor:
+    public static final RegistryObject<Item> AZURITE_HELMET = ITEMS.register("azurite_helmet",
+            () -> new ArmorItem(ModArmorMaterials.AZURITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(25))));
+    public static final RegistryObject<Item> AZURITE_CHESTPLATE = ITEMS.register("azurite_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.AZURITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(25))));
+    public static final RegistryObject<Item> AZURITE_LEGGINGS = ITEMS.register("azurite_leggings",
+            () -> new ArmorItem(ModArmorMaterials.AZURITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(25))));
+    public static final RegistryObject<Item> AZURITE_BOOTS = ITEMS.register("azurite_boots",
+            () -> new ArmorItem(ModArmorMaterials.AZURITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(25))));
 
 
     public static void register(IEventBus eventBus) {

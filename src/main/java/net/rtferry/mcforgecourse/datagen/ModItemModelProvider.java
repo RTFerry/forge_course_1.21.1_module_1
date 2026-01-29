@@ -40,6 +40,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.AZURITE_PICKAXE);
         handheldItem(ModItems.AZURITE_PAXEL);
         handheldItem(ModItems.AZURITE_HAMMER);
+
+        basicItem(ModItems.AZURITE_HELMET.get());
+        basicItem(ModItems.AZURITE_CHESTPLATE.get());
+        basicItem(ModItems.AZURITE_LEGGINGS.get());
+        basicItem(ModItems.AZURITE_BOOTS.get());
     }
 
     public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {

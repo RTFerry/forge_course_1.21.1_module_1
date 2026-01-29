@@ -3,6 +3,7 @@ package net.rtferry.mcforgecourse.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
@@ -27,6 +28,84 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("AAA")
                 .pattern("AAA")
                 .define('A', ModItems.AZURITE.get())
+                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .define('A', ModItems.AZURITE.get())
+                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.AZURITE.get())
+                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.AZURITE.get())
+                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_BOOTS.get())
+                .pattern("   ")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.AZURITE.get())
+                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_PICKAXE.get())
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.AZURITE.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_AXE.get())
+                .pattern(" AA")
+                .pattern(" BA")
+                .pattern(" B ")
+                .define('A', ModItems.AZURITE.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_SHOVEL.get())
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.AZURITE.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_HOE.get())
+                .pattern(" AA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.AZURITE.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_SWORD.get())
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .define('A', ModItems.AZURITE.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_PAXEL.get())
+                .pattern("ABC")
+                .pattern(" D ")
+                .pattern(" D ")
+                .define('A', ModItems.AZURITE_PICKAXE.get())
+                .define('B', ModItems.AZURITE_AXE.get())
+                .define('C', ModItems.AZURITE_SHOVEL.get())
+                .define('D', Items.STICK)
                 .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.AZURITE.get(), 9)

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mcforgecourse:azurite_pickaxe"
+    },
+    "B": {
+      "item": "mcforgecourse:azurite_axe"
+    },
+    "C": {
+      "item": "mcforgecourse:azurite_shovel"
+    },
+    "D": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "ABC",
+    " D ",
+    " D "
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcforgecourse:azurite_paxel"
+  }
+}
