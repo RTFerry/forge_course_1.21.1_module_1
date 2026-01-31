@@ -61,5 +61,17 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.AZURITE_SWORD.get())
                 .add(ModItems.AZURITE_PAXEL.get())
                 .add(ModItems.AZURITE_HAMMER.get());
+
+        tag(ItemTags.ARMOR_ENCHANTABLE)
+                .add(ModItems.AZURITE_HELMET.get())
+                .add(ModItems.AZURITE_CHESTPLATE.get())
+                .add(ModItems.AZURITE_LEGGINGS.get())
+                .add(ModItems.AZURITE_BOOTS.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.AZURITE_HELMET.get())
+                .add(ModItems.AZURITE_CHESTPLATE.get())
+                .add(ModItems.AZURITE_LEGGINGS.get())
+                .add(ModItems.AZURITE_BOOTS.get());
     }
 }
