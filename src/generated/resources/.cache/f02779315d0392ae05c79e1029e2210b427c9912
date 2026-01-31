@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-31T18:34:34.361302	Item Models: mcforgecourse
+// 1.21.1	2026-01-31T18:45:13.7669697	Item Models: mcforgecourse
 fea833285322e24e716e4c5ea7c7fbc6e38ca0c8 assets/mcforgecourse/models/item/aurora_ashes.json
 b851adeef6f5cfe6a85a7d23330fbbc36d2c1572 assets/mcforgecourse/models/item/azurite.json
 045fab7186ff68568cf28845aba7ab2b669495b6 assets/mcforgecourse/models/item/azurite_axe.json
@@ -40,6 +40,7 @@ fc83e422b476ddc7e14d0c049b40c899ffdfff77 assets/mcforgecourse/models/item/azurit
 590994559b73fffd3763c4bbca27308762dcace1 assets/mcforgecourse/models/item/azurite_helmet_quartz_trim.json
 f38b3a8b41c0d287d45ea9d75553b9016eb49c60 assets/mcforgecourse/models/item/azurite_helmet_redstone_trim.json
 bf070a11c23c326c812ea62e788d99aee563201f assets/mcforgecourse/models/item/azurite_hoe.json
+5a6d970c762166f28f2eb66d81e2a734e335adf4 assets/mcforgecourse/models/item/azurite_horse_armor.json
 e4873a5902921c0f03c32acace77edd3ab1bef8d assets/mcforgecourse/models/item/azurite_leggings.json
 ae4fad55b5d17c15b22fe8bb4caa89f9cd988b10 assets/mcforgecourse/models/item/azurite_leggings_amethyst_trim.json
 82b12b62c3ac91a13315e426d1ac8f199e9409ab assets/mcforgecourse/models/item/azurite_leggings_copper_trim.json

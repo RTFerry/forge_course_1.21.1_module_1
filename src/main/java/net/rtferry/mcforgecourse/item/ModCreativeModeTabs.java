@@ -33,6 +33,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.AZURITE_CHESTPLATE.get());
                         output.accept(ModItems.AZURITE_LEGGINGS.get());
                         output.accept(ModItems.AZURITE_BOOTS.get());
+                        output.accept(ModItems.AZURITE_HORSE_ARMOR.get());
                         output.accept(ModItems.AURORA_ASHES.get());
                         output.accept(ModItems.ONION.get());
                     }).build());
