@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mcforgecourse:azurite"
+  },
+  "base": {
+    "item": "minecraft:diamond_pickaxe"
+  },
+  "result": {
+    "count": 1,
+    "id": "mcforgecourse:azurite_pickaxe"
+  },
+  "template": {
+    "item": "mcforgecourse:azurite_upgrade_smithing_template"
+  }
+}

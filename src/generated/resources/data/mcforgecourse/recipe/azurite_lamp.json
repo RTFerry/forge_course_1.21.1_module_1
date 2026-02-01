@@ -4,15 +4,18 @@
   "key": {
     "A": {
       "item": "mcforgecourse:azurite"
+    },
+    "B": {
+      "item": "minecraft:glowstone_dust"
     }
   },
   "pattern": [
-    "   ",
-    "A A",
-    "A A"
+    "ABA",
+    "BAB",
+    "ABA"
   ],
   "result": {
     "count": 1,
-    "id": "mcforgecourse:azurite_boots"
+    "id": "mcforgecourse:azurite_lamp"
   }
 }

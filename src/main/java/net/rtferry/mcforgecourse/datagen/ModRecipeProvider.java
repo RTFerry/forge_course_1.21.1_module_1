@@ -31,74 +31,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('A', ModItems.AZURITE.get())
                 .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_HELMET.get())
-                .pattern("AAA")
-                .pattern("A A")
-                .pattern("   ")
-                .define('A', ModItems.AZURITE.get())
-                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_CHESTPLATE.get())
-                .pattern("A A")
-                .pattern("AAA")
-                .pattern("AAA")
-                .define('A', ModItems.AZURITE.get())
-                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_LEGGINGS.get())
-                .pattern("AAA")
-                .pattern("A A")
-                .pattern("A A")
-                .define('A', ModItems.AZURITE.get())
-                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_BOOTS.get())
-                .pattern("   ")
-                .pattern("A A")
-                .pattern("A A")
-                .define('A', ModItems.AZURITE.get())
-                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_PICKAXE.get())
-                .pattern("AAA")
-                .pattern(" B ")
-                .pattern(" B ")
-                .define('A', ModItems.AZURITE.get())
-                .define('B', Items.STICK)
-                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_AXE.get())
-                .pattern(" AA")
-                .pattern(" BA")
-                .pattern(" B ")
-                .define('A', ModItems.AZURITE.get())
-                .define('B', Items.STICK)
-                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_SHOVEL.get())
-                .pattern(" A ")
-                .pattern(" B ")
-                .pattern(" B ")
-                .define('A', ModItems.AZURITE.get())
-                .define('B', Items.STICK)
-                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_HOE.get())
-                .pattern(" AA")
-                .pattern(" B ")
-                .pattern(" B ")
-                .define('A', ModItems.AZURITE.get())
-                .define('B', Items.STICK)
-                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_SWORD.get())
-                .pattern(" A ")
-                .pattern(" A ")
-                .pattern(" B ")
-                .define('A', ModItems.AZURITE.get())
-                .define('B', Items.STICK)
-                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_PAXEL.get())
                 .pattern("ABC")
                 .pattern(" D ")
@@ -108,6 +40,14 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('C', ModItems.AZURITE_SHOVEL.get())
                 .define('D', Items.STICK)
                 .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.AZURITE_LAMP.get())
+                        .pattern("ABA")
+                        .pattern("BAB")
+                        .pattern("ABA")
+                        .define('A', ModItems.AZURITE.get())
+                        .define('B', Items.GLOWSTONE_DUST)
+                        .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.AZURITE.get(), 9)
                 .requires(ModBlocks.AZURITE_BLOCK.get())
@@ -140,6 +80,88 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
 
         trimSmithing(pRecipeOutput, ModItems.RTFERRY_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID, "rtferry"));
+
+        // Custom tool smithing upgrades:
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get()),
+                Ingredient.of(Items.DIAMOND_SWORD),
+                Ingredient.of(ModItems.AZURITE.get()),
+                RecipeCategory.COMBAT,
+                ModItems.AZURITE_SWORD.get()
+        )
+                .unlocks("has_diamond_sword", has(Items.DIAMOND_SWORD))
+                .save(pRecipeOutput, "azurite_sword_smithing");
+
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.DIAMOND_PICKAXE),
+                        Ingredient.of(ModItems.AZURITE.get()),
+                        RecipeCategory.TOOLS,
+                        ModItems.AZURITE_PICKAXE.get()
+                )
+                .unlocks("has_diamond_pickaxe", has(Items.DIAMOND_PICKAXE))
+                .save(pRecipeOutput, "azurite_pickaxe_smithing");
+
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.DIAMOND_SHOVEL),
+                        Ingredient.of(ModItems.AZURITE.get()),
+                        RecipeCategory.TOOLS,
+                        ModItems.AZURITE_SHOVEL.get()
+                )
+                .unlocks("has_diamond_shovel", has(Items.DIAMOND_SHOVEL))
+                .save(pRecipeOutput, "azurite_shovel_smithing");
+
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.DIAMOND_AXE),
+                        Ingredient.of(ModItems.AZURITE.get()),
+                        RecipeCategory.TOOLS,
+                        ModItems.AZURITE_AXE.get()
+                )
+                .unlocks("has_diamond_axe", has(Items.DIAMOND_AXE))
+                .save(pRecipeOutput, "azurite_axe_smithing");
+
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.DIAMOND_HOE),
+                        Ingredient.of(ModItems.AZURITE.get()),
+                        RecipeCategory.TOOLS,
+                        ModItems.AZURITE_HOE.get()
+                )
+                .unlocks("has_diamond_hoe", has(Items.DIAMOND_HOE))
+                .save(pRecipeOutput, "azurite_hoe_smithing");
+
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.DIAMOND_HELMET),
+                        Ingredient.of(ModItems.AZURITE.get()),
+                        RecipeCategory.COMBAT,
+                        ModItems.AZURITE_HELMET.get()
+                )
+                .unlocks("has_diamond_helmet", has(Items.DIAMOND_HELMET))
+                .save(pRecipeOutput, "azurite_helmet_smithing");
+
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.DIAMOND_CHESTPLATE),
+                        Ingredient.of(ModItems.AZURITE.get()),
+                        RecipeCategory.COMBAT,
+                        ModItems.AZURITE_CHESTPLATE.get()
+                )
+                .unlocks("has_diamond_chestplate", has(Items.DIAMOND_CHESTPLATE))
+                .save(pRecipeOutput, "azurite_chestplate_smithing");
+
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.DIAMOND_LEGGINGS),
+                        Ingredient.of(ModItems.AZURITE.get()),
+                        RecipeCategory.COMBAT,
+                        ModItems.AZURITE_LEGGINGS.get()
+                )
+                .unlocks("has_diamond_leggings", has(Items.DIAMOND_LEGGINGS))
+                .save(pRecipeOutput, "azurite_leggings_smithing");
+
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.DIAMOND_BOOTS),
+                        Ingredient.of(ModItems.AZURITE.get()),
+                        RecipeCategory.COMBAT,
+                        ModItems.AZURITE_BOOTS.get()
+                )
+                .unlocks("has_diamond_boots", has(Items.DIAMOND_BOOTS))
+                .save(pRecipeOutput, "azurite_boots_smithing");
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

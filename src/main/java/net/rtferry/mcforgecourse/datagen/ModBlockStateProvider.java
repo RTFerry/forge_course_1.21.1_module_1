@@ -1,13 +1,16 @@
 package net.rtferry.mcforgecourse.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
+import net.rtferry.mcforgecourse.block.Custom.AzuriteLamp;
 import net.rtferry.mcforgecourse.block.ModBlocks;
 
 public class ModBlockStateProvider extends BlockStateProvider {
@@ -53,6 +56,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.AZURITE_DOOR.get()), modLoc("block/azurite_door_bottom"), modLoc("block/azurite_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.AZURITE_TRAPDOOR.get()), modLoc("block/azurite_trapdoor"), true, "cutout");
 
+        customLamp();
+    }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.AZURITE_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(AzuriteLamp.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("azurite_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID, "block/" + "azurite_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("azurite_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID, "block/" + "azurite_lamp_off")))};
+            }
+        });
+        simpleBlockItem(ModBlocks.AZURITE_LAMP.get(), models().cubeAll("azurite_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID, "block/" +"azurite_lamp_on")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

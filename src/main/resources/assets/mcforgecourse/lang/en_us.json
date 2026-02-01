@@ -17,6 +17,7 @@
   "item.mcforgecourse.azurite_boots": "Azurite Boots",
   "item.mcforgecourse.azurite_horse_armor": "Azurite Horse Armor",
   "item.mcforgecourse.rtferry_armor_trim_smithing_template": "RTFerry Trim Template",
+  "item.mcforgecourse.azurite_upgrade_smithing_template": "Azurite Upgrade Smithing Template",
 
 
   "block.mcforgecourse.azurite_block": "Block of Azurite",
@@ -34,6 +35,7 @@
   "block.mcforgecourse.azurite_deepslate_ore": "Deepslate Azurite Ore",
   "block.mcforgecourse.azurite_nether_ore": "Nether Azurite Ore",
   "block.mcforgecourse.azurite_end_ore": "End Azurite Ore",
+  "block.mcforgecourse.azurite_lamp": "Azurite Lamp",
 
   "tooltip.mcforgecourse.chainsaw.tooltip.shift": "Hold §n§4Shift§r for more Info",
   "tooltip.mcforgecourse.chainsaw.tooltip.1": "This Chainsaw will cut down trees fast!",

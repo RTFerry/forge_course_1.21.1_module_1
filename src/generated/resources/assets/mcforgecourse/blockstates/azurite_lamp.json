@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "mcforgecourse:block/azurite_lamp_off"
+    },
+    "clicked=true": {
+      "model": "mcforgecourse:block/azurite_lamp_on"
+    }
+  }
+}

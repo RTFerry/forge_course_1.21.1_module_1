@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_azurite": {
+    "has_diamond_boots": {
       "conditions": {
         "items": [
           {
-            "items": "mcforgecourse:azurite"
+            "items": "minecraft:diamond_boots"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcforgecourse:azurite_axe"
+        "recipe": "minecraft:azurite_boots_smithing"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_azurite"
+      "has_diamond_boots"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcforgecourse:azurite_axe"
+      "minecraft:azurite_boots_smithing"
     ]
   }
 }

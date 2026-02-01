@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
+import net.rtferry.mcforgecourse.block.Custom.AzuriteLamp;
 import net.rtferry.mcforgecourse.block.Custom.MagicBlock;
 import net.rtferry.mcforgecourse.item.ModItems;
 
@@ -83,6 +84,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> AZURITE_TRAPDOOR = registerBlock("azurite_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON,BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).noOcclusion()));
+
+    // Azurite Lamp:
+    public static final RegistryObject<Block> AZURITE_LAMP = registerBlock("azurite_lamp",
+            () -> new AzuriteLamp(BlockBehaviour.Properties.of().strength(3f)
+                    .lightLevel(state -> state.getValue(AzuriteLamp.CLICKED) ? 15 : 0).sound(SoundType.GLASS)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

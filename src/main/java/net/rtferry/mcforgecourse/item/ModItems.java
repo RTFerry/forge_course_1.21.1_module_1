@@ -1,6 +1,7 @@
 package net.rtferry.mcforgecourse.item;
 
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -72,6 +73,9 @@ public class ModItems {
     // Armor trim pattern:
     public static final RegistryObject<Item> RTFERRY_SMITHING_TEMPLATE = ITEMS.register("rtferry_armor_trim_smithing_template",
             () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID,"rtferry")));
+
+    public static final RegistryObject<Item> AZURITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("azurite_upgrade_smithing_template",
+            () -> SmithingTemplateItem.createNetheriteUpgradeTemplate());
 
 
     public static void register(IEventBus eventBus) {

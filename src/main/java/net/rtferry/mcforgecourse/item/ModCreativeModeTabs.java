@@ -35,6 +35,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.AZURITE_BOOTS.get());
                         output.accept(ModItems.AZURITE_HORSE_ARMOR.get());
                         output.accept(ModItems.RTFERRY_SMITHING_TEMPLATE.get());
+                        output.accept(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get());
                         output.accept(ModItems.AURORA_ASHES.get());
                         output.accept(ModItems.ONION.get());
                     }).build());
@@ -54,6 +55,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.AZURITE_DOOR.get());
                         output.accept(ModBlocks.AZURITE_TRAPDOOR.get());
                         output.accept(ModBlocks.MAGIC_BLOCK.get());
+                        output.accept(ModBlocks.AZURITE_LAMP.get());
 
                         output.accept(ModBlocks.AZURITE_ORE.get());
                         output.accept(ModBlocks.AZURITE_DEEPSLATE_ORE.get());

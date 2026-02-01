@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_azurite": {
+    "has_diamond_shovel": {
       "conditions": {
         "items": [
           {
-            "items": "mcforgecourse:azurite"
+            "items": "minecraft:diamond_shovel"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcforgecourse:azurite_chestplate"
+        "recipe": "minecraft:azurite_shovel_smithing"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_azurite"
+      "has_diamond_shovel"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcforgecourse:azurite_chestplate"
+      "minecraft:azurite_shovel_smithing"
     ]
   }
 }
