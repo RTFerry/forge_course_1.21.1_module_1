@@ -9,6 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
+import net.rtferry.mcforgecourse.block.ModBlocks;
 import net.rtferry.mcforgecourse.item.custom.*;
 
 public class ModItems {

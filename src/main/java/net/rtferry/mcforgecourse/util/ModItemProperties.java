@@ -17,15 +17,15 @@ public class ModItemProperties {
     }
 
     private static void makeBow(Item item) {
-        ItemProperties.register(Items.BOW, ResourceLocation.withDefaultNamespace("pull"), (itemStack, clientLevel, livingEntity, i) -> {
+        ItemProperties.register(item, ResourceLocation.withDefaultNamespace("pull"), (itemStack, clientLevel, livingEntity, i) -> {
             if (livingEntity == null) {
                 return 0.0F;
             } else {
                 return livingEntity.getUseItem() != itemStack ? 0.0F : (float)(itemStack.getUseDuration(livingEntity) - livingEntity.getUseItemRemainingTicks()) / 20.0F;
             }
         });
-        ItemProperties.register(Items.BOW, ResourceLocation.withDefaultNamespace("pulling"),
-                (itemStack, clientLevel, livingEntity, i) -> livingEntity != null && livingEntity.isUsingItem() && livingEntity.getUseItem() == itemStack ? 1.0F : 0.0F
-        );
+        ItemProperties.register(item, ResourceLocation.withDefaultNamespace("pulling"), (itemStack, clientLevel, usingItem, i) -> {
+            return usingItem != null && usingItem.isUsingItem() && usingItem.getUseItem() == itemStack ? 1.0F : 0.0F;
+        });
     }
 }
