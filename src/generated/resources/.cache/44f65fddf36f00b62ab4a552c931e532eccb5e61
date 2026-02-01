@@ -1,6 +1,7 @@
-// 1.21.1	2026-02-01T12:00:29.8379613	Tags for minecraft:item mod id mcforgecourse
+// 1.21.1	2026-02-01T18:57:27.5644224	Tags for minecraft:item mod id mcforgecourse
 1f35f62f3d45023ce10fad6d2863fac68195b776 data/mcforgecourse/tags/item/transformable_items.json
 46918d569eb9d9e4a28dd93ce7a8fcae54ad55d3 data/minecraft/tags/item/enchantable/armor.json
+0fd511215a9b94e0abbd6f9a7e4e072de2612f3b data/minecraft/tags/item/enchantable/bow.json
 d56ecf2489c42050ea9be18d4974b66b702d52ff data/minecraft/tags/item/enchantable/durability.json
 fca81f6b4ff94dd63ed11b427eecc5ee487d15d3 data/minecraft/tags/item/enchantable/fire_aspect.json
 e9240066183a198012248c3ed3554e67a572bbc4 data/minecraft/tags/item/enchantable/mining.json

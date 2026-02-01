@@ -1,7 +1,8 @@
-// 1.21.1	2026-02-01T13:32:55.9407424	Recipes
+// 1.21.1	2026-02-01T18:57:27.5674548	Recipes
 606a6221e4eace04c33c97e6d9667b5ea6d3cab9 data/mcforgecourse/advancement/recipes/building_blocks/azurite_slab.json
 d4272cf31c71b6f3d78db21ebcbd8f7f13195230 data/mcforgecourse/advancement/recipes/building_blocks/azurite_stairs.json
 f8f158c22eb1251238dc5517ca1dd719afbe14d0 data/mcforgecourse/advancement/recipes/building_blocks/azurite_wall.json
+8c76294cd8bebf2884d1d7cd2a3cc176dacd9b32 data/mcforgecourse/advancement/recipes/combat/azurite_bow.json
 10a197a3aca8fa40daa14e3164f5787d5f748bd0 data/mcforgecourse/advancement/recipes/decorations/azurite_fence.json
 c8941cc7b796a0d810449630e7a4934915093365 data/mcforgecourse/advancement/recipes/misc/azurite.json
 7f1c5f0725b298e31cc89d852735ce4b24a87df0 data/mcforgecourse/advancement/recipes/misc/azurite_2.json
@@ -27,6 +28,7 @@ c83662bd480bc1cb698fa8fa9902f7ceb58b7ec6 data/mcforgecourse/advancement/recipes/
 fab6abea114faf7db47d2edb0021cf6d8a48bd8e data/mcforgecourse/recipe/azurite.json
 fab6abea114faf7db47d2edb0021cf6d8a48bd8e data/mcforgecourse/recipe/azurite_2.json
 9fb2215ad93819c1715ef2b1fced12cf6bc72830 data/mcforgecourse/recipe/azurite_block.json
+e6f0f7c288ddcc67e8e865f83a05454f0802989e data/mcforgecourse/recipe/azurite_bow.json
 156cd91c97d73097f547a1e1dff583906743016a data/mcforgecourse/recipe/azurite_button.json
 0dbeab266b0844463919bd565ab036f3b78800da data/mcforgecourse/recipe/azurite_door.json
 2b3190d1a0665187d91936b3f0c0fa668bc44d3d data/mcforgecourse/recipe/azurite_fence.json

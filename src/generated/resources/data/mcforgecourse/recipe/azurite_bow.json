@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "mcforgecourse:azurite"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " AC",
+    "B C",
+    " AC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcforgecourse:azurite_bow"
+  }
+}
