@@ -31,6 +31,15 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('A', ModItems.AZURITE.get())
                 .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AZURITE_BOW.get())
+                .pattern(" AC")
+                .pattern("B C")
+                .pattern(" AC")
+                .define('A', ModItems.AZURITE.get())
+                .define('B', Items.STICK)
+                .define('C', Items.STRING)
+                .unlockedBy("has_azurite", has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AZURITE_PAXEL.get())
                 .pattern("ABC")
                 .pattern(" D ")

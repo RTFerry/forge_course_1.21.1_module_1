@@ -1,0 +1,6 @@
+{
+  "parent": "mcforgecourse:item/azurite_bow",
+  "textures": {
+    "layer0": "mcforgecourse:item/azurite_bow_pulling_2"
+  }
+}
