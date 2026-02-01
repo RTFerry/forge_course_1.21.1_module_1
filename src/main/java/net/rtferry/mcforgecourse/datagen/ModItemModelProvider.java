@@ -71,6 +71,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.AZURITE_HORSE_ARMOR.get());
         basicItem(ModItems.RTFERRY_SMITHING_TEMPLATE.get());
         basicItem(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get());
+        basicItem(ModItems.METAL_DETECTOR.get());
+        basicItem(ModItems.DATA_TABLET.get());
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

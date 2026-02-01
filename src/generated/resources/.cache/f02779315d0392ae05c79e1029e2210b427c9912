@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-01T13:27:53.1559325	Item Models: mcforgecourse
+// 1.21.1	2026-02-01T14:23:16.1382716	Item Models: mcforgecourse
 fea833285322e24e716e4c5ea7c7fbc6e38ca0c8 assets/mcforgecourse/models/item/aurora_ashes.json
 b851adeef6f5cfe6a85a7d23330fbbc36d2c1572 assets/mcforgecourse/models/item/azurite.json
 045fab7186ff68568cf28845aba7ab2b669495b6 assets/mcforgecourse/models/item/azurite_axe.json
@@ -59,6 +59,8 @@ ce8f9cccdd90864e2a2d454f7d8e57c8a38ea100 assets/mcforgecourse/models/item/azurit
 64645559c103ee9b19b179ac0bf9879dbcc59e21 assets/mcforgecourse/models/item/azurite_upgrade_smithing_template.json
 495d80fad71c4e5c8e3fb17731b94d2300a6d845 assets/mcforgecourse/models/item/azurite_wall.json
 47f87ae3eb96acabbbcfb675219b16bf679fa01c assets/mcforgecourse/models/item/chainsaw.json
+eb2efb661eff77647db7ccbd0ae94404ec88d0a6 assets/mcforgecourse/models/item/data_tablet.json
+9d106c678fa593a3413ffe6b94d3f62ffc3dfa9f assets/mcforgecourse/models/item/metal_detector.json
 0595feb661005e8ce4ad364bc5be694db6f4b199 assets/mcforgecourse/models/item/onion.json
 00a896706c5f3f458c2fe2323f4d16f4b1ce87ba assets/mcforgecourse/models/item/raw_azurite.json
 26a353e06777a75ff02c672ee85a07f79000e5c7 assets/mcforgecourse/models/item/rtferry_armor_trim_smithing_template.json

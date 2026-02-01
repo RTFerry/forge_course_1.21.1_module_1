@@ -18,7 +18,10 @@
   "item.mcforgecourse.azurite_horse_armor": "Azurite Horse Armor",
   "item.mcforgecourse.rtferry_armor_trim_smithing_template": "RTFerry Trim Template",
   "item.mcforgecourse.azurite_upgrade_smithing_template": "Azurite Upgrade Smithing Template",
+  "item.mcforgecourse.metal_detector": "Metal Detector",
+  "item.mcforgecourse.data_tablet": "Data Tablet",
 
+  "item.mccourse.metal_detector.no_valuables": "No Valuables Found!",
 
   "block.mcforgecourse.azurite_block": "Block of Azurite",
   "block.mcforgecourse.azurite_stairs": "Azurite Stairs",
@@ -42,7 +45,6 @@
   "tooltip.mcforgecourse.chainsaw.tooltip.2": "§lHold Right-Click to chop Wood§r",
   "tooltip.mcforgecourse.magic_block.tooltip.shift": "Hold §n§4Shift§r for more Info",
   "tooltip.mcforgecourse.magic_block.tooltip.1": "Throwing §n§9Azurite§r on top of this block will turn it into a §n§bDiamond§r",
-
 
   "creativetab.azurite_items": "Azurite Items",
   "creativetab.azurite_blocks": "Azurite Blocks",

@@ -77,6 +77,12 @@ public class ModItems {
     public static final RegistryObject<Item> AZURITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("azurite_upgrade_smithing_template",
             () -> SmithingTemplateItem.createNetheriteUpgradeTemplate());
 
+    // Metal Detector and Data tablet:
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(100)));
+    public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
+            () -> new DataTabletItem(new Item.Properties().stacksTo(1)));
+
 
     public static void register(IEventBus eventBus) {
            ITEMS.register(eventBus);

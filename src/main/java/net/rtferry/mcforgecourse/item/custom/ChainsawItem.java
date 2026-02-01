@@ -12,6 +12,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.rtferry.mcforgecourse.component.ModDataComponentTypes;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
@@ -33,10 +34,14 @@ public class ChainsawItem extends Item {
                 pContext.getItemInHand().hurtAndBreak(1, ((ServerLevel) level),
                         (ServerPlayer) pContext.getPlayer(), item ->
                         Objects.requireNonNull(pContext.getPlayer()).onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
+
+                pContext.getItemInHand().set(ModDataComponentTypes.COORDINATES.get(), pContext.getClickedPos());
             }
         }
 
-
+        if(level.getBlockState(pContext.getClickedPos()).is(BlockTags.LOGS)) {
+            pContext.getItemInHand().set(ModDataComponentTypes.COORDINATES.get(), pContext.getClickedPos());
+        }
 
         return InteractionResult.CONSUME;
     }
@@ -48,6 +53,10 @@ public class ChainsawItem extends Item {
         } else {
             pTooltipComponents.add(Component.translatable("tooltip.mcforgecourse.chainsaw.tooltip.1"));
             pTooltipComponents.add(Component.translatable("tooltip.mcforgecourse.chainsaw.tooltip.2"));
+        }
+
+        if(pStack.get(ModDataComponentTypes.COORDINATES.get()) != null) {
+            pTooltipComponents.add(Component.literal("Last Tree was chopped at " + pStack.get(ModDataComponentTypes.COORDINATES.get())));
         }
         super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
     }

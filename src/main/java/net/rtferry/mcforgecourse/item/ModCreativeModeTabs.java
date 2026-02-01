@@ -38,6 +38,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get());
                         output.accept(ModItems.AURORA_ASHES.get());
                         output.accept(ModItems.ONION.get());
+                        output.accept(ModItems.METAL_DETECTOR.get());
+                        output.accept(ModItems.DATA_TABLET.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AZURITE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("azurite_blocks_tab",
