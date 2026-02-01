@@ -73,6 +73,6 @@ public class MetalDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState blockState) {
-        return blockState.is(Blocks.IRON_ORE);
+        return blockState.getBlock() == Blocks.IRON_ORE || blockState.getBlock() == Blocks.COPPER_ORE;
     }
 }
