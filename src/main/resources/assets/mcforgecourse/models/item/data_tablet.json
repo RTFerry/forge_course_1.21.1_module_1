@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mcforgecourse:item/data_tablet_off"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "mcforgecourse:on": 1
+      },
+      "model": "mcforgecourse:item/data_tablet_on"
+    }
+  ]
+}

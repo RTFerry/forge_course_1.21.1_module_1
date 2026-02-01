@@ -17,6 +17,7 @@ import net.rtferry.mcforgecourse.block.ModBlocks;
 import net.rtferry.mcforgecourse.component.ModDataComponentTypes;
 import net.rtferry.mcforgecourse.item.ModCreativeModeTabs;
 import net.rtferry.mcforgecourse.item.ModItems;
+import net.rtferry.mcforgecourse.util.ModItemProperties;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -78,7 +79,7 @@ public class MCForgeCourseMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }
