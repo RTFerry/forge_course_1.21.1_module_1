@@ -16,6 +16,7 @@
   "item.mcforgecourse.azurite_leggings": "Azurite Leggings",
   "item.mcforgecourse.azurite_boots": "Azurite Boots",
   "item.mcforgecourse.azurite_horse_armor": "Azurite Horse Armor",
+  "item.mcforgecourse.rtferry_armor_trim_smithing_template": "RTFerry Trim Template",
 
 
   "block.mcforgecourse.azurite_block": "Block of Azurite",
@@ -42,5 +43,8 @@
 
 
   "creativetab.azurite_items": "Azurite Items",
-  "creativetab.azurite_blocks": "Azurite Blocks"
+  "creativetab.azurite_blocks": "Azurite Blocks",
+
+  "trim_pattern.mcforgecourse.rtferry": "RTFerry Armor Trim",
+  "trim_material.mcforgecourse.azurite": "Azurite Material"
 }

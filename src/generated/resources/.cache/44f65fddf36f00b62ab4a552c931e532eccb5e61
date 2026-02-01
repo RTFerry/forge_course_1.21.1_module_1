@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-31T18:34:34.3597918	Tags for minecraft:item mod id mcforgecourse
+// 1.21.1	2026-02-01T12:00:29.8379613	Tags for minecraft:item mod id mcforgecourse
 1f35f62f3d45023ce10fad6d2863fac68195b776 data/mcforgecourse/tags/item/transformable_items.json
 46918d569eb9d9e4a28dd93ce7a8fcae54ad55d3 data/minecraft/tags/item/enchantable/armor.json
 d56ecf2489c42050ea9be18d4974b66b702d52ff data/minecraft/tags/item/enchantable/durability.json
@@ -8,3 +8,5 @@ ee08f66d377a774ce179caee8e4a9843efc16f66 data/minecraft/tags/item/enchantable/mi
 90e0043658707f87593e0e49cf3d67c8f44e45d0 data/minecraft/tags/item/enchantable/sharp_weapon.json
 e245758af252fd48fda957fe99d1dff0df06f97b data/minecraft/tags/item/enchantable/sword.json
 46918d569eb9d9e4a28dd93ce7a8fcae54ad55d3 data/minecraft/tags/item/trimmable_armor.json
+1f35f62f3d45023ce10fad6d2863fac68195b776 data/minecraft/tags/item/trim_materials.json
+c5824991ac5c1700133e72145b87bba19a5fd650 data/minecraft/tags/item/trim_templates.json

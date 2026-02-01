@@ -1,5 +1,6 @@
 package net.rtferry.mcforgecourse.item;
 
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -67,6 +68,10 @@ public class ModItems {
     public static final RegistryObject<Item> AZURITE_HORSE_ARMOR = ITEMS.register("azurite_horse_armor",
             () -> new AnimalArmorItem(ModArmorMaterials.AZURITE_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1)));
+
+    // Armor trim pattern:
+    public static final RegistryObject<Item> RTFERRY_SMITHING_TEMPLATE = ITEMS.register("rtferry_armor_trim_smithing_template",
+            () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID,"rtferry")));
 
 
     public static void register(IEventBus eventBus) {

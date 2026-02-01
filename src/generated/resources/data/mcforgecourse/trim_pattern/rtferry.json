@@ -1,0 +1,8 @@
+{
+  "asset_id": "mcforgecourse:rtferry",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.mcforgecourse.rtferry"
+  },
+  "template_item": "mcforgecourse:rtferry_armor_trim_smithing_template"
+}

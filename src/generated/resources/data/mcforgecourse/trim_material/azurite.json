@@ -1,0 +1,9 @@
+{
+  "asset_name": "azurite",
+  "description": {
+    "color": "#031CFC",
+    "translate": "trim_material.mcforgecourse.azurite"
+  },
+  "ingredient": "mcforgecourse:azurite",
+  "item_model_index": 0.9
+}

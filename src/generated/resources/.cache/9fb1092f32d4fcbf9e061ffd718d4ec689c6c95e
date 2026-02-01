@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-29T21:39:31.1548094	Recipes
+// 1.21.1	2026-02-01T12:00:29.8409933	Recipes
 606a6221e4eace04c33c97e6d9667b5ea6d3cab9 data/mcforgecourse/advancement/recipes/building_blocks/azurite_slab.json
 d4272cf31c71b6f3d78db21ebcbd8f7f13195230 data/mcforgecourse/advancement/recipes/building_blocks/azurite_stairs.json
 f8f158c22eb1251238dc5517ca1dd719afbe14d0 data/mcforgecourse/advancement/recipes/building_blocks/azurite_wall.json
@@ -26,6 +26,7 @@ a138983eb6217117e52daf5f75782c74a9e2dee0 data/mcforgecourse/advancement/recipes/
 3799a6fcb7318509a1b6746f8ea641128cc2eb16 data/mcforgecourse/advancement/recipes/misc/azurite_pickaxe.json
 a2d157ab21296dcceec71953b2085bf819847f11 data/mcforgecourse/advancement/recipes/misc/azurite_shovel.json
 356a8160aea766eea1a06fe019d2e87ad5b5e0a1 data/mcforgecourse/advancement/recipes/misc/azurite_sword.json
+ea6af396a2bba133a9c52e006d2e95ed8ff6de33 data/mcforgecourse/advancement/recipes/misc/rtferry.json
 feb2218fa98e56f4478f807fc9b78f2268fffe0a data/mcforgecourse/advancement/recipes/redstone/azurite_button.json
 e638587b0920fd75d6a7b16194212f4890474ad0 data/mcforgecourse/advancement/recipes/redstone/azurite_door.json
 1d2caaac8785b44a36d0b2e7aaa23922543cb3f5 data/mcforgecourse/advancement/recipes/redstone/azurite_fence_gate.json
@@ -63,3 +64,4 @@ aaf6e68e0edfef5467e1199e8bcc0b6a9b0f6291 data/mcforgecourse/recipe/azurite_shove
 1e2a3009be66e8aa1c440ab330abb2864b6fcd31 data/mcforgecourse/recipe/azurite_sword.json
 f25283370a1d27bb70f3c01d65dad2ad92112388 data/mcforgecourse/recipe/azurite_trapdoor.json
 8785332a4b4331a7ee3975fc54fc953bb044df9c data/mcforgecourse/recipe/azurite_wall.json
+17f7906647f961645bbb186960a64bb317abcb43 data/mcforgecourse/recipe/rtferry.json
