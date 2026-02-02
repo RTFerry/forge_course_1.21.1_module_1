@@ -64,6 +64,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.AZURITE_LAMP.get());
                         output.accept(ModBlocks.CATMINT.get());
                         output.accept(ModBlocks.COLORED_LEAVES.get());
+                        output.accept(ModBlocks.PEDESTAL.get());
 
                         output.accept(ModBlocks.AZURITE_ORE.get());
                         output.accept(ModBlocks.AZURITE_DEEPSLATE_ORE.get());

@@ -17,6 +17,7 @@ import net.rtferry.mcforgecourse.MCForgeCourseMod;
 import net.rtferry.mcforgecourse.block.Custom.AzuriteLamp;
 import net.rtferry.mcforgecourse.block.Custom.MagicBlock;
 import net.rtferry.mcforgecourse.block.Custom.OnionCropBlock;
+import net.rtferry.mcforgecourse.block.Custom.PedestalBlock;
 import net.rtferry.mcforgecourse.item.ModItems;
 import net.rtferry.mcforgecourse.sound.ModSounds;
 
@@ -106,6 +107,10 @@ public class ModBlocks {
     // Leaves:
     public static final RegistryObject<Block> COLORED_LEAVES = registerBlock("colored_leaves",
             () -> new Block(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.CHERRY_LEAVES)));
+
+    // Pedestal:
+    public static final RegistryObject<Block> PEDESTAL = registerBlock("pedestal",
+            () -> new PedestalBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
