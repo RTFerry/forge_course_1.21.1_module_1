@@ -16,6 +16,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.server.command.ConfigCommand;
 import net.rtferry.mcforgecourse.Config;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
+import net.rtferry.mcforgecourse.command.ClearHomeCommand;
 import net.rtferry.mcforgecourse.command.ReturnHomeCommand;
 import net.rtferry.mcforgecourse.command.SetHomeCommand;
 import net.rtferry.mcforgecourse.item.ModItems;
@@ -72,6 +73,7 @@ public class ModEvents {
     public static void onCommandsRegister(RegisterCommandsEvent event) {
         new SetHomeCommand(event.getDispatcher());
         new ReturnHomeCommand(event.getDispatcher());
+        new ClearHomeCommand(event.getDispatcher());
 
         ConfigCommand.register(event.getDispatcher());
     }
