@@ -46,6 +46,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.AZURITE.get());
         basicItem(ModItems.RAW_AZURITE.get());
         basicItem(ModItems.ONION.get());
+        basicItem(ModItems.ONION_SEEDS.get());
         basicItem(ModItems.AURORA_ASHES.get());
         basicItem(ModItems.CHAINSAW.get());
 

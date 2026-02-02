@@ -15,6 +15,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
 import net.rtferry.mcforgecourse.block.Custom.AzuriteLamp;
 import net.rtferry.mcforgecourse.block.Custom.MagicBlock;
+import net.rtferry.mcforgecourse.block.Custom.OnionCropBlock;
 import net.rtferry.mcforgecourse.item.ModItems;
 
 import java.util.function.Supplier;
@@ -89,6 +90,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> AZURITE_LAMP = registerBlock("azurite_lamp",
             () -> new AzuriteLamp(BlockBehaviour.Properties.of().strength(3f)
                     .lightLevel(state -> state.getValue(AzuriteLamp.CLICKED) ? 15 : 0).sound(SoundType.GLASS)));
+
+    // Onion Crop Block:
+    public static final RegistryObject<Block> ONION_CROP = BLOCKS.register("onion_crop",
+            () -> new OnionCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

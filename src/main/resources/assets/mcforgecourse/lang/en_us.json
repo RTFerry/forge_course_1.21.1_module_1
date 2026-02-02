@@ -3,6 +3,7 @@
   "item.mcforgecourse.raw_azurite": "Raw Azurite",
   "item.mcforgecourse.chainsaw": "Chainsaw",
   "item.mcforgecourse.onion": "Onion",
+  "item.mcforgecourse.onion_seeds": "Onion Seeds",
   "item.mcforgecourse.aurora_ashes": "Aurora Ashes",
   "item.mcforgecourse.azurite_pickaxe": "Azurite Pickaxe",
   "item.mcforgecourse.azurite_sword": "Azurite Sword",
@@ -40,6 +41,7 @@
   "block.mcforgecourse.azurite_nether_ore": "Nether Azurite Ore",
   "block.mcforgecourse.azurite_end_ore": "End Azurite Ore",
   "block.mcforgecourse.azurite_lamp": "Azurite Lamp",
+  "block.mcforgecourse.onion_crop": "Onion Crop",
 
   "tooltip.mcforgecourse.chainsaw.tooltip.shift": "Hold §n§4Shift§r for more Info",
   "tooltip.mcforgecourse.chainsaw.tooltip.1": "This Chainsaw will cut down trees fast!",

@@ -88,6 +88,10 @@ public class ModItems {
     public static final RegistryObject<Item> AZURITE_BOW = ITEMS.register("azurite_bow",
             () -> new BowItem(new Item.Properties().durability(300)));
 
+    // Onion Seeds:
+    public static final RegistryObject<Item> ONION_SEEDS = ITEMS.register("onion_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.ONION_CROP.get(), new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
            ITEMS.register(eventBus);
     }
