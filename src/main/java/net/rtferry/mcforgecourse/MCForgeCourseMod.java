@@ -2,6 +2,7 @@ package net.rtferry.mcforgecourse;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -52,9 +53,11 @@ public class MCForgeCourseMod
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
-
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ComposterBlock.COMPOSTABLES.put(ModItems.ONION.get(), 0.65f);
+            ComposterBlock.COMPOSTABLES.put(ModItems.ONION_SEEDS.get(), 0.35f);
+        });
     }
 
     // Add the example block item to the building blocks tab
