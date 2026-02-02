@@ -23,6 +23,7 @@ import net.rtferry.mcforgecourse.block.ModBlocks;
 import net.rtferry.mcforgecourse.component.ModDataComponentTypes;
 import net.rtferry.mcforgecourse.item.ModCreativeModeTabs;
 import net.rtferry.mcforgecourse.item.ModItems;
+import net.rtferry.mcforgecourse.sound.ModSounds;
 import net.rtferry.mcforgecourse.util.ModItemProperties;
 import org.slf4j.Logger;
 
@@ -42,6 +43,7 @@ public class MCForgeCourseMod
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         ModDataComponentTypes.register(modEventBus);
 
