@@ -69,6 +69,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.POTTED_CATMINT.get(),
                 models().singleTexture("potted_catmint",ResourceLocation.parse("flower_pot_cross"),"plant",
                         blockTexture(ModBlocks.CATMINT.get())).renderType("cutout"));
+
+        // Leaves:
+        leavesBlock(ModBlocks.COLORED_LEAVES);
+    }
+
+    private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), ResourceLocation.parse("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {

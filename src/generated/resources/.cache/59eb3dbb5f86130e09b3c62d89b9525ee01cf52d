@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-02T14:50:26.2099337	Loot Tables
+// 1.21.1	2026-02-02T15:03:24.5803099	Loot Tables
 0d7722be5f9503749bd04fb646c110a4e68a6a7f data/mcforgecourse/loot_table/blocks/azurite_block.json
 91af863e22516e99fd84d33d997b2843490d23bf data/mcforgecourse/loot_table/blocks/azurite_button.json
 7c9ff4c8dbf2fba135c6b6e4b24c6c5a3a28fce7 data/mcforgecourse/loot_table/blocks/azurite_deepslate_ore.json
@@ -15,6 +15,7 @@ e63f36af5f411ce1304a4fbac4e0911e8bed207d data/mcforgecourse/loot_table/blocks/az
 05a077d5dc6df8dc72ac1410b89079938ed16e3f data/mcforgecourse/loot_table/blocks/azurite_trapdoor.json
 9817d98c2418836929f371096e081b2b48027d94 data/mcforgecourse/loot_table/blocks/azurite_wall.json
 f3bd9c5a2250c4c3cf7710d656187cc5fde0da6e data/mcforgecourse/loot_table/blocks/catmint.json
+e80012f5c36dc38bd24dd042449ca9671bfb2774 data/mcforgecourse/loot_table/blocks/colored_leaves.json
 3038237ed11d44ae3a11c141be1ae3dbabb66159 data/mcforgecourse/loot_table/blocks/magic_block.json
 1dcec4ca96e75919936ce1f7cf4b7f5b312afb92 data/mcforgecourse/loot_table/blocks/onion_crop.json
 02a7010940ddb1d9abbb0b6c4b002ed57a04c22b data/mcforgecourse/loot_table/blocks/potted_flower.json

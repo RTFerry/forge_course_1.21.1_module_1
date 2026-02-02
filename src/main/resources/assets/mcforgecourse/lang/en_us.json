@@ -44,6 +44,7 @@
   "block.mcforgecourse.onion_crop": "Onion Crop",
   "block.mcforgecourse.catmint": "Catmint",
   "block.mcforgecourse.potted_catmint": "Potted Catmint",
+  "block.mcforgecourse.colored_leaves": "colored_leaves",
 
   "tooltip.mcforgecourse.chainsaw.tooltip.shift": "Hold §n§4Shift§r for more Info",
   "tooltip.mcforgecourse.chainsaw.tooltip.1": "This Chainsaw will cut down trees fast!",
