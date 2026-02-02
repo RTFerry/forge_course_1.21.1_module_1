@@ -18,6 +18,7 @@ import net.rtferry.mcforgecourse.block.Custom.AzuriteLamp;
 import net.rtferry.mcforgecourse.block.Custom.MagicBlock;
 import net.rtferry.mcforgecourse.block.Custom.OnionCropBlock;
 import net.rtferry.mcforgecourse.item.ModItems;
+import net.rtferry.mcforgecourse.sound.ModSounds;
 
 import java.util.function.Supplier;
 import java.util.function.ToIntFunction;
@@ -32,7 +33,7 @@ public class ModBlocks {
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops()));
+                    .strength(3f).requiresCorrectToolForDrops().sound(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     // Experience blocks:
     public static final RegistryObject<Block> AZURITE_ORE = registerBlock("azurite_ore",

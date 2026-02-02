@@ -10,5 +10,35 @@
     "sounds": [
       "mcforgecourse:chainsaw_pull"
     ]
+  },
+  "magic_block_step": {
+    "subtitle": "sounds.mcforgecourse.magic_block_step",
+    "sounds": [
+      "mcforgecourse:magic_block_step"
+    ]
+  },
+  "magic_block_place": {
+    "subtitle": "sounds.mcforgecourse.magic_block_place",
+    "sounds": [
+      "mcforgecourse:magic_block_place"
+    ]
+  },
+  "magic_block_hit": {
+    "subtitle": "sounds.mcforgecourse.magic_block_hit",
+    "sounds": [
+      "mcforgecourse:magic_block_hit"
+    ]
+  },
+  "magic_block_fall": {
+    "subtitle": "sounds.mcforgecourse.magic_block_fall",
+    "sounds": [
+      "mcforgecourse:magic_block_fall"
+    ]
+  },
+  "magic_block_break": {
+    "subtitle": "sounds.mcforgecourse.magic_block_break",
+    "sounds": [
+      "mcforgecourse:magic_block_break"
+    ]
   }
 }
