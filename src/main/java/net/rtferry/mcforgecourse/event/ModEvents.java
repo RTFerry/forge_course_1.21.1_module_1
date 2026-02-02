@@ -7,11 +7,17 @@ import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.server.command.ConfigCommand;
+import net.rtferry.mcforgecourse.Config;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
+import net.rtferry.mcforgecourse.command.ReturnHomeCommand;
+import net.rtferry.mcforgecourse.command.SetHomeCommand;
 import net.rtferry.mcforgecourse.item.ModItems;
 import net.rtferry.mcforgecourse.item.custom.HammerItem;
 
@@ -60,5 +66,19 @@ public class ModEvents {
                 }
             }
         }
+    }
+
+    @SubscribeEvent
+    public static void onCommandsRegister(RegisterCommandsEvent event) {
+        new SetHomeCommand(event.getDispatcher());
+        new ReturnHomeCommand(event.getDispatcher());
+
+        ConfigCommand.register(event.getDispatcher());
+    }
+
+    @SubscribeEvent
+    public static void onPlayerCloned(PlayerEvent.Clone event) {
+        event.getEntity().getPersistentData().putIntArray("mcforgecourse.homepos",
+                event.getOriginal().getPersistentData().getIntArray("mcforgecourse.homepos"));
     }
 }
