@@ -11,6 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
 import net.rtferry.mcforgecourse.block.ModBlocks;
 import net.rtferry.mcforgecourse.item.custom.*;
+import net.rtferry.mcforgecourse.sound.ModSounds;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -91,6 +92,12 @@ public class ModItems {
     // Onion Seeds:
     public static final RegistryObject<Item> ONION_SEEDS = ITEMS.register("onion_seeds",
             () -> new ItemNameBlockItem(ModBlocks.ONION_CROP.get(), new Item.Properties()));
+
+    // Music disc:
+    public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new Item(new Item.Properties().stacksTo(1).jukeboxPlayable(ModSounds.BAR_BRAWL_KEY)));
+    public static final RegistryObject<Item> HORNET_MUSIC_DISC = ITEMS.register("hornet_music_disc",
+            () -> new Item(new Item.Properties().stacksTo(1).jukeboxPlayable(ModSounds.HORNET_KEY)));
 
     public static void register(IEventBus eventBus) {
            ITEMS.register(eventBus);

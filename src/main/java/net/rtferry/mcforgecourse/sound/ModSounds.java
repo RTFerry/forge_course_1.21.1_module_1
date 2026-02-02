@@ -1,7 +1,10 @@
 package net.rtferry.mcforgecourse.sound;
 
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.item.JukeboxSong;
 import net.minecraftforge.common.util.ForgeSoundType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,6 +28,17 @@ public class ModSounds {
     public static final ForgeSoundType MAGIC_BLOCK_SOUNDS = new ForgeSoundType(1f,1f,
             ModSounds.MAGIC_BLOCK_BREAK, ModSounds.MAGIC_BLOCK_STEP, ModSounds.MAGIC_BLOCK_PLACE,
             ModSounds.MAGIC_BLOCK_HIT, ModSounds.MAGIC_BLOCK_FALL);
+
+    public static final RegistryObject<SoundEvent> BAR_BRAWL = registerSoundEvent("bar_brawl");
+    public static final ResourceKey<JukeboxSong> BAR_BRAWL_KEY = createSong("bar_brawl");
+
+    public static final RegistryObject<SoundEvent> HORNET = registerSoundEvent("hornet");
+    public static final ResourceKey<JukeboxSong> HORNET_KEY = createSong("hornet");
+
+
+    private static ResourceKey<JukeboxSong> createSong(String name) {
+        return ResourceKey.create(Registries.JUKEBOX_SONG, ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID, name));
+    }
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         ResourceLocation id = ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID, name);

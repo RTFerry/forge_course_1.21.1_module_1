@@ -49,6 +49,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ONION_SEEDS.get());
         basicItem(ModItems.AURORA_ASHES.get());
         basicItem(ModItems.CHAINSAW.get());
+        basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+        basicItem(ModItems.HORNET_MUSIC_DISC.get());
 
         buttonItem(ModBlocks.AZURITE_BUTTON, ModBlocks.AZURITE_BLOCK);
         fenceItem(ModBlocks.AZURITE_FENCE, ModBlocks.AZURITE_BLOCK);

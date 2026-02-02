@@ -22,6 +22,10 @@
   "item.mcforgecourse.metal_detector": "Metal Detector",
   "item.mcforgecourse.data_tablet": "Data Tablet",
   "item.mcforgecourse.azurite_bow": "Azurite Bow",
+  "item.mcforgecourse.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.mcforgecourse.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+  "item.mcforgecourse.hornet_music_disc": "Hollow Knight OST - Hornet",
+  "item.mcforgecourse.hornet_music_disc.desc": "Hornet - Christopher Larkin",
 
   "item.mccourse.metal_detector.no_valuables": "No Valuables Found!",
 
@@ -44,7 +48,7 @@
   "block.mcforgecourse.onion_crop": "Onion Crop",
   "block.mcforgecourse.catmint": "Catmint",
   "block.mcforgecourse.potted_catmint": "Potted Catmint",
-  "block.mcforgecourse.colored_leaves": "colored_leaves",
+  "block.mcforgecourse.colored_leaves": "Colored Leaves",
 
   "tooltip.mcforgecourse.chainsaw.tooltip.shift": "Hold §n§4Shift§r for more Info",
   "tooltip.mcforgecourse.chainsaw.tooltip.1": "This Chainsaw will cut down trees fast!",

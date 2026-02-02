@@ -40,5 +40,21 @@
     "sounds": [
       "mcforgecourse:magic_block_break"
     ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "mcforgecourse:bar_brawl",
+        "stream": true
+      }
+    ]
+  },
+  "hornet": {
+    "sounds": [
+      {
+        "name": "mcforgecourse:hornet",
+        "stream": true
+      }
+    ]
   }
 }
