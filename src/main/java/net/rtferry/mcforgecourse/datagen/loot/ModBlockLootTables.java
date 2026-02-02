@@ -43,6 +43,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.AZURITE_WALL.get());
         dropSelf(ModBlocks.AZURITE_TRAPDOOR.get());
         dropSelf(ModBlocks.AZURITE_LAMP.get());
+        dropSelf(ModBlocks.CATMINT.get());
 
         this.add(ModBlocks.AZURITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.AZURITE_ORE.get(), ModItems.RAW_AZURITE.get()));
@@ -65,6 +66,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OnionCropBlock.AGE,3));
         this.add(ModBlocks.ONION_CROP.get(), this.createCropDrops(ModBlocks.ONION_CROP.get(),
                 ModItems.ONION.get(), ModItems.ONION_SEEDS.get(), lootItemConditionBuilder));
+
+        // Potted flower:
+        this.add(ModBlocks.POTTED_CATMINT.get(),
+                createPotFlowerItemTable(ModBlocks.CATMINT.get()));
 
     }
 

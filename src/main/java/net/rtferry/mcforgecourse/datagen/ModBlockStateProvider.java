@@ -63,7 +63,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         customLamp();
         makeCrop(((CropBlock) ModBlocks.ONION_CROP.get()),"onion_crop_stage","onion_crop_stage");
 
-
+        // Flower:
+        simpleBlock(ModBlocks.CATMINT.get(),
+                models().cross(blockTexture(ModBlocks.CATMINT.get()).getPath(), blockTexture(ModBlocks.CATMINT.get())).renderType("cutout"));
+        simpleBlock(ModBlocks.POTTED_CATMINT.get(),
+                models().singleTexture("potted_catmint",ResourceLocation.parse("flower_pot_cross"),"plant",
+                        blockTexture(ModBlocks.CATMINT.get())).renderType("cutout"));
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {

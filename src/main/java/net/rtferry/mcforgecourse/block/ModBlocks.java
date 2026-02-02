@@ -1,6 +1,7 @@
 package net.rtferry.mcforgecourse.block;
 
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -94,6 +95,12 @@ public class ModBlocks {
     // Onion Crop Block:
     public static final RegistryObject<Block> ONION_CROP = BLOCKS.register("onion_crop",
             () -> new OnionCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+    // Flower:
+    public static final RegistryObject<Block> CATMINT = registerBlock("catmint",
+            () -> new FlowerBlock(MobEffects.LUCK, 6, BlockBehaviour.Properties.ofFullCopy(Blocks.ALLIUM)));
+    public static final RegistryObject<Block> POTTED_CATMINT = BLOCKS.register("potted_flower",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), CATMINT, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_ALLIUM)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

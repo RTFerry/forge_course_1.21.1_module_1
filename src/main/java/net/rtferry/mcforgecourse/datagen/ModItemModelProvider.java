@@ -73,6 +73,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RTFERRY_SMITHING_TEMPLATE.get());
         basicItem(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get());
         basicItem(ModItems.METAL_DETECTOR.get());
+
+        simpleBlockBlockItem(ModBlocks.CATMINT);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
@@ -142,6 +144,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/generated")).texture("layer0",
                 ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockBlockItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID,"block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

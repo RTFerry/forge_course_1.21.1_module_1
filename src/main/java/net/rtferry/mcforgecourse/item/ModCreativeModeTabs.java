@@ -60,6 +60,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.AZURITE_TRAPDOOR.get());
                         output.accept(ModBlocks.MAGIC_BLOCK.get());
                         output.accept(ModBlocks.AZURITE_LAMP.get());
+                        output.accept(ModBlocks.CATMINT.get());
 
                         output.accept(ModBlocks.AZURITE_ORE.get());
                         output.accept(ModBlocks.AZURITE_DEEPSLATE_ORE.get());

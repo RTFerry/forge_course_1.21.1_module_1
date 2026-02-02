@@ -42,6 +42,8 @@
   "block.mcforgecourse.azurite_end_ore": "End Azurite Ore",
   "block.mcforgecourse.azurite_lamp": "Azurite Lamp",
   "block.mcforgecourse.onion_crop": "Onion Crop",
+  "block.mcforgecourse.catmint": "Catmint",
+  "block.mcforgecourse.potted_catmint": "Potted Catmint",
 
   "tooltip.mcforgecourse.chainsaw.tooltip.shift": "Hold §n§4Shift§r for more Info",
   "tooltip.mcforgecourse.chainsaw.tooltip.1": "This Chainsaw will cut down trees fast!",

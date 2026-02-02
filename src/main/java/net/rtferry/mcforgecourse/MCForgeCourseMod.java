@@ -2,7 +2,9 @@ package net.rtferry.mcforgecourse;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -57,6 +59,8 @@ public class MCForgeCourseMod
         event.enqueueWork(() -> {
             ComposterBlock.COMPOSTABLES.put(ModItems.ONION.get(), 0.65f);
             ComposterBlock.COMPOSTABLES.put(ModItems.ONION_SEEDS.get(), 0.35f);
+
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CATMINT.getId(), ModBlocks.POTTED_CATMINT);
         });
     }
 

@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-02T14:30:43.2748729	Item Models: mcforgecourse
+// 1.21.1	2026-02-02T14:52:22.3344732	Item Models: mcforgecourse
 fea833285322e24e716e4c5ea7c7fbc6e38ca0c8 assets/mcforgecourse/models/item/aurora_ashes.json
 b851adeef6f5cfe6a85a7d23330fbbc36d2c1572 assets/mcforgecourse/models/item/azurite.json
 045fab7186ff68568cf28845aba7ab2b669495b6 assets/mcforgecourse/models/item/azurite_axe.json
@@ -58,6 +58,7 @@ ce8f9cccdd90864e2a2d454f7d8e57c8a38ea100 assets/mcforgecourse/models/item/azurit
 6da9d0f149952eab8fe445b23d57b0a994a13e59 assets/mcforgecourse/models/item/azurite_sword.json
 64645559c103ee9b19b179ac0bf9879dbcc59e21 assets/mcforgecourse/models/item/azurite_upgrade_smithing_template.json
 495d80fad71c4e5c8e3fb17731b94d2300a6d845 assets/mcforgecourse/models/item/azurite_wall.json
+13549972d3502fb36b0042076e26917fafbaa863 assets/mcforgecourse/models/item/catmint.json
 47f87ae3eb96acabbbcfb675219b16bf679fa01c assets/mcforgecourse/models/item/chainsaw.json
 9d106c678fa593a3413ffe6b94d3f62ffc3dfa9f assets/mcforgecourse/models/item/metal_detector.json
 0595feb661005e8ce4ad364bc5be694db6f4b199 assets/mcforgecourse/models/item/onion.json
