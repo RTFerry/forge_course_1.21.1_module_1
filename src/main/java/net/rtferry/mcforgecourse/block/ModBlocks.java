@@ -14,10 +14,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
-import net.rtferry.mcforgecourse.block.Custom.AzuriteLamp;
-import net.rtferry.mcforgecourse.block.Custom.MagicBlock;
-import net.rtferry.mcforgecourse.block.Custom.OnionCropBlock;
-import net.rtferry.mcforgecourse.block.Custom.PedestalBlock;
+import net.rtferry.mcforgecourse.block.Custom.*;
 import net.rtferry.mcforgecourse.item.ModItems;
 import net.rtferry.mcforgecourse.sound.ModSounds;
 
@@ -111,6 +108,9 @@ public class ModBlocks {
     // Pedestal:
     public static final RegistryObject<Block> PEDESTAL = registerBlock("pedestal",
             () -> new PedestalBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<Block> CHESS_BOARD = registerBlock("chess_board",
+            () -> new ChessBoardBlock(BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
