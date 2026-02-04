@@ -26,6 +26,7 @@
   "item.mcforgecourse.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
   "item.mcforgecourse.hornet_music_disc": "Hollow Knight OST - Hornet",
   "item.mcforgecourse.hornet_music_disc.desc": "Hornet - Christopher Larkin",
+  "item.mcforgecourse.spectre_staff": "Spectre Staff",
 
   "item.mccourse.metal_detector.no_valuables": "No Valuables Found!",
 
@@ -51,6 +52,8 @@
   "block.mcforgecourse.colored_leaves": "Colored Leaves",
   "block.mcforgecourse.pedestal": "Pedestal",
   "block.mcforgecourse.chess_board": "Chess Board",
+
+  "effect.mcforgecourse.slimey": "Slimey",
 
   "tooltip.mcforgecourse.chainsaw.tooltip.shift": "Hold §n§4Shift§r for more Info",
   "tooltip.mcforgecourse.chainsaw.tooltip.1": "This Chainsaw will cut down trees fast!",

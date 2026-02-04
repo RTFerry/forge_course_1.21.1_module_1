@@ -99,6 +99,9 @@ public class ModItems {
     public static final RegistryObject<Item> HORNET_MUSIC_DISC = ITEMS.register("hornet_music_disc",
             () -> new Item(new Item.Properties().stacksTo(1).jukeboxPlayable(ModSounds.HORNET_KEY)));
 
+    public static final RegistryObject<Item> SPECTRE_STAFF = ITEMS.register("spectre_staff",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
     public static void register(IEventBus eventBus) {
            ITEMS.register(eventBus);
     }

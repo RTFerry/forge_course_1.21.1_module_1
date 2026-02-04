@@ -21,6 +21,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rtferry.mcforgecourse.block.ModBlocks;
 import net.rtferry.mcforgecourse.component.ModDataComponentTypes;
+import net.rtferry.mcforgecourse.effect.ModEffects;
 import net.rtferry.mcforgecourse.item.ModCreativeModeTabs;
 import net.rtferry.mcforgecourse.item.ModItems;
 import net.rtferry.mcforgecourse.sound.ModSounds;
@@ -44,6 +45,7 @@ public class MCForgeCourseMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         ModDataComponentTypes.register(modEventBus);
 
