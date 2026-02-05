@@ -7,7 +7,11 @@ import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraftforge.event.RegisterCommandsEvent;
+import net.minecraftforge.event.brewing.BrewingRecipeRegisterEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.level.BlockEvent;
@@ -21,6 +25,7 @@ import net.rtferry.mcforgecourse.command.ReturnHomeCommand;
 import net.rtferry.mcforgecourse.command.SetHomeCommand;
 import net.rtferry.mcforgecourse.item.ModItems;
 import net.rtferry.mcforgecourse.item.custom.HammerItem;
+import net.rtferry.mcforgecourse.potion.ModPotions;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -67,6 +72,13 @@ public class ModEvents {
                 }
             }
         }
+    }
+
+    @SubscribeEvent
+    public static void onBrewingRecipeRegister(BrewingRecipeRegisterEvent event) {
+        PotionBrewing.Builder builder = event.getBuilder();
+
+        builder.addMix(Potions.AWKWARD, Items.SLIME_BALL, ModPotions.SLIMEY_POTION.getHolder().get());
     }
 
     @SubscribeEvent

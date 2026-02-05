@@ -55,6 +55,10 @@
 
   "effect.mcforgecourse.slimey": "Slimey",
 
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
   "tooltip.mcforgecourse.chainsaw.tooltip.shift": "Hold §n§4Shift§r for more Info",
   "tooltip.mcforgecourse.chainsaw.tooltip.1": "This Chainsaw will cut down trees fast!",
   "tooltip.mcforgecourse.chainsaw.tooltip.2": "§lHold Right-Click to chop Wood§r",

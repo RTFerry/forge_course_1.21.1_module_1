@@ -24,6 +24,7 @@ import net.rtferry.mcforgecourse.component.ModDataComponentTypes;
 import net.rtferry.mcforgecourse.effect.ModEffects;
 import net.rtferry.mcforgecourse.item.ModCreativeModeTabs;
 import net.rtferry.mcforgecourse.item.ModItems;
+import net.rtferry.mcforgecourse.potion.ModPotions;
 import net.rtferry.mcforgecourse.sound.ModSounds;
 import net.rtferry.mcforgecourse.util.ModItemProperties;
 import org.slf4j.Logger;
@@ -46,6 +47,7 @@ public class MCForgeCourseMod
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
         ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
 
         ModDataComponentTypes.register(modEventBus);
 
