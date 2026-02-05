@@ -27,6 +27,7 @@ import net.rtferry.mcforgecourse.item.ModItems;
 import net.rtferry.mcforgecourse.potion.ModPotions;
 import net.rtferry.mcforgecourse.sound.ModSounds;
 import net.rtferry.mcforgecourse.util.ModItemProperties;
+import net.rtferry.mcforgecourse.villager.ModVillagers;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -48,6 +49,7 @@ public class MCForgeCourseMod
         ModSounds.register(modEventBus);
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
+        ModVillagers.register(modEventBus);
 
         ModDataComponentTypes.register(modEventBus);
 

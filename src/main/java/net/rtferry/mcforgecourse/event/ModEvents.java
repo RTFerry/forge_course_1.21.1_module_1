@@ -34,6 +34,7 @@ import net.rtferry.mcforgecourse.command.SetHomeCommand;
 import net.rtferry.mcforgecourse.item.ModItems;
 import net.rtferry.mcforgecourse.item.custom.HammerItem;
 import net.rtferry.mcforgecourse.potion.ModPotions;
+import net.rtferry.mcforgecourse.villager.ModVillagers;
 
 import java.util.HashSet;
 import java.util.List;
@@ -107,7 +108,7 @@ public class ModEvents {
 
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event) {
-        if(event.getType() == VillagerProfession.FARMER) {
+        if(event.getType() == ModVillagers.KAUPENGER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
@@ -121,7 +122,7 @@ public class ModEvents {
             ));
         }
 
-        if(event.getType() == VillagerProfession.TOOLSMITH) {
+        if(event.getType() == ModVillagers.KAUPENGER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
