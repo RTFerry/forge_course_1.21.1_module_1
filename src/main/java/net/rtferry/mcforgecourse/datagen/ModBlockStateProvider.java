@@ -8,6 +8,7 @@ import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
@@ -72,6 +73,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         // Leaves:
         leavesBlock(ModBlocks.COLORED_LEAVES);
+
+        horizontalBlock(ModBlocks.CRYSTALLIZER.get(), mcLoc("block/blast_furnace_side"), modLoc("block/crystallizer_front"), mcLoc("block/blast_furnace_top"));
     }
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {

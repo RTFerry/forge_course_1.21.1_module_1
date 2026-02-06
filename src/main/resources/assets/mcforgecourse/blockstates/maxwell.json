@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=east": {
+      "model": "mcforgecourse:block/maxwell",
+      "y": 90
+    },
+    "facing=north": {
       "model": "mcforgecourse:block/maxwell"
+    },
+    "facing=south": {
+      "model": "mcforgecourse:block/maxwell",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mcforgecourse:block/maxwell",
+      "y": 270
     }
   }
 }

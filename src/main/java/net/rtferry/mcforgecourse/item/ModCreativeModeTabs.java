@@ -70,6 +70,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PEDESTAL.get());
                         output.accept(ModBlocks.CHESS_BOARD.get());
                         output.accept(ModBlocks.MAXWELL.get());
+                        output.accept(ModBlocks.CRYSTALLIZER.get());
 
                         output.accept(ModBlocks.AZURITE_ORE.get());
                         output.accept(ModBlocks.AZURITE_DEEPSLATE_ORE.get());

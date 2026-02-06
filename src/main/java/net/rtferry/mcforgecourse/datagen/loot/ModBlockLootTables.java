@@ -48,6 +48,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.PEDESTAL.get());
         dropSelf(ModBlocks.CHESS_BOARD.get());
         dropSelf(ModBlocks.MAXWELL.get());
+        dropSelf(ModBlocks.CRYSTALLIZER.get());
 
         this.add(ModBlocks.AZURITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.AZURITE_ORE.get(), ModItems.RAW_AZURITE.get()));

@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-06T15:33:47.0446363	Item Models: mcforgecourse
+// 1.21.1	2026-02-06T16:04:13.3181778	Item Models: mcforgecourse
 fea833285322e24e716e4c5ea7c7fbc6e38ca0c8 assets/mcforgecourse/models/item/aurora_ashes.json
 b851adeef6f5cfe6a85a7d23330fbbc36d2c1572 assets/mcforgecourse/models/item/azurite.json
 045fab7186ff68568cf28845aba7ab2b669495b6 assets/mcforgecourse/models/item/azurite_axe.json
@@ -62,6 +62,7 @@ ce8f9cccdd90864e2a2d454f7d8e57c8a38ea100 assets/mcforgecourse/models/item/azurit
 e0012a04782a2e6099d40f663e7d0dfb562dec9a assets/mcforgecourse/models/item/bar_brawl_music_disc.json
 13549972d3502fb36b0042076e26917fafbaa863 assets/mcforgecourse/models/item/catmint.json
 47f87ae3eb96acabbbcfb675219b16bf679fa01c assets/mcforgecourse/models/item/chainsaw.json
+23ec8971c085e1d2458b542dfeacd5b07444d8d9 assets/mcforgecourse/models/item/cyrstallizer.json
 c783e07ca0c25da78c457991a2a0fc994b0aa7b3 assets/mcforgecourse/models/item/hornet_music_disc.json
 9d106c678fa593a3413ffe6b94d3f62ffc3dfa9f assets/mcforgecourse/models/item/metal_detector.json
 0595feb661005e8ce4ad364bc5be694db6f4b199 assets/mcforgecourse/models/item/onion.json

@@ -79,6 +79,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModFluids.AZURITE_WATER_BUCKET.get());
 
         simpleBlockBlockItem(ModBlocks.CATMINT);
+
+        horizontalBlockItem(ModBlocks.CRYSTALLIZER);
+    }
+
+    private ItemModelBuilder horizontalBlockItem(RegistryObject<Block> block) {
+        return getBuilder(block.getId().getPath()).parent(new ModelFile.UncheckedModelFile(ResourceLocation.fromNamespaceAndPath(MCForgeCourseMod.MOD_ID,
+                "block/" + block.getId().getPath())));
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

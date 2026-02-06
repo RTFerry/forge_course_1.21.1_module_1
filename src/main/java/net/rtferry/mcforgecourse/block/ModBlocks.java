@@ -115,6 +115,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> MAXWELL = registerBlock("maxwell",
             () -> new MaxwellBlock(BlockBehaviour.Properties.of().strength(3f).noOcclusion()));
 
+    public static final RegistryObject<Block> CRYSTALLIZER = registerBlock("cyrstallizer",
+            () -> new CrystallizerBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

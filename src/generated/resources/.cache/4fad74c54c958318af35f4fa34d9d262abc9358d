@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-02T15:03:24.5787878	Block States: mcforgecourse
+// 1.21.1	2026-02-06T16:09:07.4340434	Block States: mcforgecourse
 87d8a9425f4cdf50476160e5582c3c0edb0be390 assets/mcforgecourse/blockstates/azurite_block.json
 61388433f601ed665705b1db3afedfbe75bf7f25 assets/mcforgecourse/blockstates/azurite_button.json
 b9c58b7123b38aa8ab5d4f6bcacf7074423e0c08 assets/mcforgecourse/blockstates/azurite_deepslate_ore.json
@@ -16,6 +16,7 @@ dddb0919bbff755c189b2c50a435095a227faf80 assets/mcforgecourse/blockstates/azurit
 29e5550710f5e4bf3755cbc8bf3ef2225f46b828 assets/mcforgecourse/blockstates/azurite_wall.json
 a9ff9b531fb64967e07c4e667dee9b9476a0e391 assets/mcforgecourse/blockstates/catmint.json
 dec1c3b2c9234d99c926d1a191df33fb710ccaf8 assets/mcforgecourse/blockstates/colored_leaves.json
+1871dbf94139f572509bdf91c675656625245642 assets/mcforgecourse/blockstates/cyrstallizer.json
 7d99189048d402230a9c67fa8c1d2aefc8402f15 assets/mcforgecourse/blockstates/magic_block.json
 ca0008b588b90c0420798dc350f39e0a893b2b89 assets/mcforgecourse/blockstates/onion_crop.json
 32447f53a4c1497d76bb475fa187d53a6566094a assets/mcforgecourse/blockstates/potted_flower.json
@@ -57,6 +58,7 @@ c020d0a4feeb4fb94a12b8d3b7aa2beacc68cc1f assets/mcforgecourse/models/block/azuri
 7ef0bf9a76f7d84aa90bfda06c23bd0dfcea1d48 assets/mcforgecourse/models/block/azurite_wall_side_tall.json
 7099cc95f34c32d34ad4a02302fa88c98a4f6bef assets/mcforgecourse/models/block/catmint.json
 6ed00a380c3fdd79c88f552ebbd97fb8e37f4e3e assets/mcforgecourse/models/block/colored_leaves.json
+27f089f315f6d7c615144a82c1020fdcb240bd9c assets/mcforgecourse/models/block/cyrstallizer.json
 ea3221a2701915e1e14de593dc42edd38596f3c2 assets/mcforgecourse/models/block/magic_block.json
 c648cf8013a2d91d6769fb45c7c4f40159e31471 assets/mcforgecourse/models/block/onion_crop_stage0.json
 291461ca72817de0a972c8fa72720715e64985de assets/mcforgecourse/models/block/onion_crop_stage1.json
