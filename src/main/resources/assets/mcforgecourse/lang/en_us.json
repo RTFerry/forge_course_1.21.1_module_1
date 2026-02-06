@@ -56,6 +56,13 @@
 
   "effect.mcforgecourse.slimey": "Slimey",
 
+  "painting.mcforgecourse.world.title": "World",
+  "painting.mcforgecourse.shrimp.title": "Shrimp",
+  "painting.mcforgecourse.saw_them.title": "Saw Them",
+  "painting.mcforgecourse.world.author": "NanoAttack",
+  "painting.mcforgecourse.shrimp.author": "NanoAttack",
+  "painting.mcforgecourse.saw_them.author": "NanoAttack",
+
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
   "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
