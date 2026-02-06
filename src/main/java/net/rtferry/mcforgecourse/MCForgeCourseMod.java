@@ -2,6 +2,8 @@ package net.rtferry.mcforgecourse;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.block.Blocks;
@@ -22,6 +24,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rtferry.mcforgecourse.block.ModBlocks;
 import net.rtferry.mcforgecourse.component.ModDataComponentTypes;
 import net.rtferry.mcforgecourse.effect.ModEffects;
+import net.rtferry.mcforgecourse.fluid.ModFluids;
+import net.rtferry.mcforgecourse.fluid.ModFluidTypes;
 import net.rtferry.mcforgecourse.item.ModCreativeModeTabs;
 import net.rtferry.mcforgecourse.item.ModItems;
 import net.rtferry.mcforgecourse.potion.ModPotions;
@@ -50,6 +54,8 @@ public class MCForgeCourseMod
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
         ModVillagers.register(modEventBus);
+        ModFluids.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
 
         ModDataComponentTypes.register(modEventBus);
 
@@ -98,6 +104,10 @@ public class MCForgeCourseMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             ModItemProperties.addCustomItemProperties();
+            event.enqueueWork(() -> {
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_AZURITE_WATER.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_AZURITE_WATER.get(), RenderType.translucent());
+            });
         }
 
         @SubscribeEvent

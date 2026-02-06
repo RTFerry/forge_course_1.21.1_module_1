@@ -27,6 +27,7 @@
   "item.mcforgecourse.hornet_music_disc": "Hollow Knight OST - Hornet",
   "item.mcforgecourse.hornet_music_disc.desc": "Hornet - Christopher Larkin",
   "item.mcforgecourse.spectre_staff": "Spectre Staff",
+  "item.mcforgecourse.azurite_water_bucket": "Azurite Water Bucket",
 
   "item.mccourse.metal_detector.no_valuables": "No Valuables Found!",
 
@@ -59,9 +60,11 @@
   "painting.mcforgecourse.world.title": "World",
   "painting.mcforgecourse.shrimp.title": "Shrimp",
   "painting.mcforgecourse.saw_them.title": "Saw Them",
+  "painting.mcforgecourse.wanderer.title": "Wanderer",
   "painting.mcforgecourse.world.author": "NanoAttack",
   "painting.mcforgecourse.shrimp.author": "NanoAttack",
   "painting.mcforgecourse.saw_them.author": "NanoAttack",
+  "painting.mcforgecourse.wanderer.author": "PlatinumG17",
 
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",

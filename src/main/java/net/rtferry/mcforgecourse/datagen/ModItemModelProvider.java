@@ -17,6 +17,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rtferry.mcforgecourse.MCForgeCourseMod;
 import net.rtferry.mcforgecourse.block.ModBlocks;
+import net.rtferry.mcforgecourse.fluid.ModFluids;
 import net.rtferry.mcforgecourse.item.ModItems;
 
 import java.util.LinkedHashMap;
@@ -75,6 +76,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RTFERRY_SMITHING_TEMPLATE.get());
         basicItem(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE.get());
         basicItem(ModItems.METAL_DETECTOR.get());
+        basicItem(ModFluids.AZURITE_WATER_BUCKET.get());
 
         simpleBlockBlockItem(ModBlocks.CATMINT);
     }
