@@ -112,6 +112,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHESS_BOARD = registerBlock("chess_board",
             () -> new ChessBoardBlock(BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
 
+    public static final RegistryObject<Block> MAXWELL = registerBlock("maxwell",
+            () -> new MaxwellBlock(BlockBehaviour.Properties.of().strength(3f).noOcclusion()));
+
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

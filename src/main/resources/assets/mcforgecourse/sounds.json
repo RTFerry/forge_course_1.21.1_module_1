@@ -56,5 +56,11 @@
         "stream": true
       }
     ]
+  },
+  "maxwell_song": {
+    "subtitle": "sounds.mcforgecourse.maxwell_song",
+    "sounds": [
+      "mcforgecourse:maxwell_song"
+    ]
   }
 }

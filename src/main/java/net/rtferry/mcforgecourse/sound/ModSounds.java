@@ -25,6 +25,8 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> MAGIC_BLOCK_PLACE = registerSoundEvent("magic_block_place");
     public static final RegistryObject<SoundEvent> MAGIC_BLOCK_STEP = registerSoundEvent("magic_block_step");
 
+    public static final RegistryObject<SoundEvent> MAXWELL_SONG = registerSoundEvent("maxwell_song");
+
     public static final ForgeSoundType MAGIC_BLOCK_SOUNDS = new ForgeSoundType(1f,1f,
             ModSounds.MAGIC_BLOCK_BREAK, ModSounds.MAGIC_BLOCK_STEP, ModSounds.MAGIC_BLOCK_PLACE,
             ModSounds.MAGIC_BLOCK_HIT, ModSounds.MAGIC_BLOCK_FALL);
