@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "mcforgecourse:item/spectre_staff",
-		"particle": "mcforgecourse:item/spectre_staff"
+		"0": "mcforgecourse:item/spectre_staff_3d",
+		"particle": "mcforgecourse:item/spectre_staff_3d"
 	},
 	"elements": [
 		{
